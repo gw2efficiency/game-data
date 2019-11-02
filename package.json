@@ -1,7 +1,7 @@
 {
-  "name": "game-data",
+  "name": "@gw2efficiency/game-data",
   "description": "Additional game data that the API does not provide",
-  "version": "0.1.0",
+  "version": "0.1.2",
   "repository": "git@github.com:gw2efficiency/game-data.git",
   "author": "queicherius <queicherius@gmail.com>",
   "license": "MIT",

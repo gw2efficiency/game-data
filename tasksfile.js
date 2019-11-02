@@ -12,16 +12,28 @@ function build () {
   sh('tsc')
 
   // Remove build time dependencies
-  const deleteFiles = glob.sync(`build/**/{generate,test}.js`)
+  const deleteFiles = [].concat(
+    glob.sync(`build/**/{generate,test}.js`),
+    glob.sync(`build/**/{generate,test}.d.ts`)
+  )
   deleteFiles.map(fs.unlinkSync)
 
-  // Add commonjs export and rename for easier import syntax
-  const dataFiles = glob.sync(`build/**/data.js`)
-  dataFiles.map((file) => {
-    const content = fs.readFileSync(file, 'utf-8')
-    fs.writeFileSync(file, content + 'module.exports = exports.default;\n', 'utf-8')
-    fs.renameSync(file, file.replace('data.js', 'index.js'))
+  // Rename "data" to "index" for easier import
+  const dataFiles = [].concat(glob.sync(`build/**/data.js`), glob.sync(`build/**/data.d.ts`))
+  dataFiles.map((path) => {
+    fs.renameSync(path, path.replace('data', 'index'))
   })
+
+  // Add commonjs export
+  const indexFiles = glob.sync(`build/**/index.js`)
+  indexFiles.map((path) => {
+    const content = fs.readFileSync(path, 'utf-8')
+    fs.writeFileSync(path, content + 'module.exports = exports.default;\n', 'utf-8')
+  })
+
+  // Add package.json and README into build directory
+  sh('cp package.json build/package.json')
+  sh('cp README.md build/README.md')
 }
 
 cli({
