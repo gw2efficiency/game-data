@@ -1,0 +1,27 @@
+{
+  "name": "game-data",
+  "description": "Additional game data that the API does not provide",
+  "version": "0.1.0",
+  "repository": "git@github.com:gw2efficiency/game-data.git",
+  "author": "queicherius <queicherius@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "test": "jest",
+    "generate": "sh generate.sh",
+    "lint": "prettierx --list-different 'src/**/*.ts'",
+    "format": "prettierx --write 'src/**/*.ts'"
+  },
+  "devDependencies": {
+    "@types/jest": "^24.0.21",
+    "@types/node": "^12.12.5",
+    "@types/node-fetch": "^2.5.3",
+    "escape-regex-string": "^1.0.6",
+    "flocky": "^0.1.21",
+    "jest": "^24.9.0",
+    "node-fetch": "^2.6.0",
+    "prettierx": "^0.8.0",
+    "ts-jest": "^24.1.0",
+    "ts-node": "^8.4.1",
+    "typescript": "^3.6.4"
+  }
+}
