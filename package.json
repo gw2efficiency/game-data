@@ -8,6 +8,7 @@
   "scripts": {
     "test": "jest",
     "generate": "sh generate.sh",
+    "build": "node ./tasksfile.js build",
     "lint": "prettierx --list-different 'src/**/*.ts'",
     "format": "prettierx --write 'src/**/*.ts'"
   },
@@ -17,9 +18,11 @@
     "@types/node-fetch": "^2.5.3",
     "escape-regex-string": "^1.0.6",
     "flocky": "^0.1.21",
+    "glob": "^7.1.5",
     "jest": "^24.9.0",
     "node-fetch": "^2.6.0",
     "prettierx": "^0.8.0",
+    "tasksfile": "^5.1.0",
     "ts-jest": "^24.1.0",
     "ts-node": "^8.4.1",
     "typescript": "^3.6.4"

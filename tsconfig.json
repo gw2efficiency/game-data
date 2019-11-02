@@ -5,6 +5,8 @@
     "target": "es2015",
     "module": "commonjs",
     "lib": ["esnext"],
+    "outDir": "build/",
+    "rootDir": "src/",
 
     "allowJs": false,
     "skipLibCheck": true,
