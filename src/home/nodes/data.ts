@@ -1,16 +1,16 @@
-interface HomeNodeData {
+export interface GameDataHomeNode {
   /** The home node id */
   id: string
 
   /** The home node name */
   name: string
 
-  /** The unlock items for this home node */
+  /** The unlock items for the home node */
   unlock_items: Array<number>
 }
 
 // prettier-ignore
-const HOME_NODE_DATA: Array<HomeNodeData> = [
+const GAME_DATA_HOME_NODES: Array<GameDataHomeNode> = [
   // -- GENERATE-START --
   { id: 'advanced_cloth_rack', name: 'Advanced Cloth Rack', unlock_items: [81853] },
   { id: 'advanced_leather_rack', name: 'Advanced Leather Rack', unlock_items: [81852] },
@@ -65,4 +65,4 @@ const HOME_NODE_DATA: Array<HomeNodeData> = [
   // -- GENERATE-END --
 ]
 
-export default HOME_NODE_DATA
+export default GAME_DATA_HOME_NODES
