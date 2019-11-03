@@ -9,6 +9,7 @@ interface MountSkinData {
   unlock_items: Array<number>
 }
 
+// prettier-ignore
 const MOUNT_SKIN_DATA: Array<MountSkinData> = [
   // -- GENERATE-START --
   { id: 1, name: 'Raptor', unlock_items: [] },
