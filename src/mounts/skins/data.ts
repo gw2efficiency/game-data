@@ -1,16 +1,16 @@
-interface MountSkinData {
+export interface GameDataMountSkin {
   /** The mount skin id */
   id: number
 
   /** The mount skin name */
   name: string
 
-  /** The unlock items for this mount skin */
+  /** The unlock items for the mount skin */
   unlock_items: Array<number>
 }
 
 // prettier-ignore
-const MOUNT_SKIN_DATA: Array<MountSkinData> = [
+const GAME_DATA_MOUNT_SKINS: Array<GameDataMountSkin> = [
   // -- GENERATE-START --
   { id: 1, name: 'Raptor', unlock_items: [] },
   { id: 2, name: 'Skimmer', unlock_items: [] },
@@ -187,4 +187,4 @@ const MOUNT_SKIN_DATA: Array<MountSkinData> = [
   // -- GENERATE-END --
 ]
 
-export default MOUNT_SKIN_DATA
+export default GAME_DATA_MOUNT_SKINS

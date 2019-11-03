@@ -2,7 +2,8 @@ import * as path from 'path'
 import * as fs from 'fs'
 import fetch from 'node-fetch'
 import escapeRegex from 'escape-regex-string'
-import data from './data'
+import data, { GameDataMountSkin } from './data'
+import { escapeQuotes } from '../../_helpers/generate'
 
 interface ApiMountSkin {
   id: number
@@ -13,6 +14,7 @@ const FILE_PATH = path.join(__dirname, './data.ts')
 const START_MARKER = `// -- GENERATE-START --`
 const END_MARKER = `// -- GENERATE-END --`
 const REPLACE_REGEX = new RegExp(`${escapeRegex(START_MARKER)}(.*)${escapeRegex(END_MARKER)}`, 's')
+const EMPTY_DATA: GameDataMountSkin = { id: 0, name: '', unlock_items: [] }
 
 async function run () {
   const file = fs.readFileSync(FILE_PATH, 'utf-8')
@@ -22,7 +24,7 @@ async function run () {
 
   const mountData = json
     .map((skin: ApiMountSkin) => {
-      const previousData = data.find((x) => x.id === skin.id) || { unlock_items: [] }
+      const previousData = data.find((x) => x.id === skin.id) || EMPTY_DATA
 
       return [
         `  { `,
@@ -36,10 +38,6 @@ async function run () {
 
   const content = file.replace(REPLACE_REGEX, `${START_MARKER}\n${mountData}\n  ${END_MARKER}`)
   fs.writeFileSync(FILE_PATH, content, 'utf-8')
-}
-
-function escapeQuotes (string: string): string {
-  return string.replace(/'/g, `\\'`)
 }
 
 run()

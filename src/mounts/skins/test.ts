@@ -1,10 +1,10 @@
 import data from './data'
 
-it('has the correct structure', () => {
+it('has the correct type', () => {
   const ids = data.filter((skin) => skin.id <= 0 || skin.name === '').map((skin) => skin.id)
 
   if (ids.length > 0) {
-    throw new Error('Incorrect structure: ' + ids.join(', '))
+    throw new Error('Incorrect type: ' + ids.join(', '))
   }
 })
 

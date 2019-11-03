@@ -6,10 +6,19 @@ function sh (command, options = {}) {
   return _sh(command, { nopipe: true, ...options })
 }
 
+function generate () {
+  const generators = glob.sync(`src/**/generate.ts`).filter((path) => !path.includes('_helpers'))
+
+  for (const generator of generators) {
+    sh(`ts-node ${generator}`)
+  }
+}
+
 function build () {
   // Build TypeScript
   sh('rm -rf build/')
   sh('tsc')
+  sh('rm -rf build/_helpers/')
 
   // Remove build time dependencies
   const deleteFiles = [].concat(
@@ -37,5 +46,6 @@ function build () {
 }
 
 cli({
+  generate,
   build
 })

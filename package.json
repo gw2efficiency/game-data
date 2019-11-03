@@ -7,7 +7,7 @@
   "license": "MIT",
   "scripts": {
     "test": "jest",
-    "generate": "sh generate.sh",
+    "generate": "node ./tasksfile.js generate",
     "build": "node ./tasksfile.js build",
     "lint": "prettierx --list-different 'src/**/*.ts'",
     "format": "prettierx --write 'src/**/*.ts'"
