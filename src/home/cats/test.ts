@@ -1,3 +1,4 @@
+import { duplicates } from 'flocky'
 import data from './data'
 import { IMAGE_FILE_ENDINGS, validDateString, validFileEnding, validUrl } from '../../_helpers/test'
 
@@ -20,7 +21,7 @@ it('has the correct type', () => {
 })
 
 it('does not have duplicated ids', () => {
-  const ids = data.map((cat) => cat.id).filter((x, i, self) => self.indexOf(x) !== i)
+  const ids = duplicates(data.map((cat) => cat.id))
 
   if (ids.length > 0) {
     throw new Error('Duplicated ids: ' + ids.join(', '))

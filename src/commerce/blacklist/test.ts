@@ -1,7 +1,8 @@
+import { duplicates } from 'flocky'
 import data from './data'
 
 it('does not have duplicated ids', () => {
-  const ids = data.map((item) => item.id).filter((x, i, self) => self.indexOf(x) !== i)
+  const ids = duplicates(data.map((item) => item.id))
 
   if (ids.length > 0) {
     throw new Error('Duplicated ids: ' + ids.join(', '))

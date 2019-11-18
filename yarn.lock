@@ -1220,10 +1220,10 @@ find-up@^3.0.0:
   dependencies:
     locate-path "^3.0.0"
 
-flocky@^0.1.21:
-  version "0.1.21"
-  resolved "https://registry.yarnpkg.com/flocky/-/flocky-0.1.21.tgz#1d92123a5f633ab75ed0c32c5e67613bb966ac1a"
-  integrity sha512-XkrKAC9MroIz1RVWabTxn/3QGILAQBUAvxQuYbtuQ7XLeM9NmWS8vGh5BFZjMDBFWmPXIjxxVmk0pKFGtDPXoQ==
+flocky@^0.2.2:
+  version "0.2.2"
+  resolved "https://registry.yarnpkg.com/flocky/-/flocky-0.2.2.tgz#566e80d0500e1d9b446dc2c30995bff24cf27f1e"
+  integrity sha512-EYXGbN2EROz5uHFtdzYepCaCQhpzFAzBOAw7By3alewer2j738HQ7nZxqAbvZ7h/Gcc4uo8kqAdSG4wH3N2umw==
 
 for-in@^1.0.2:
   version "1.0.2"

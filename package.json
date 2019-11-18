@@ -17,7 +17,7 @@
     "@types/node": "^12.12.5",
     "@types/node-fetch": "^2.5.3",
     "escape-regex-string": "^1.0.6",
-    "flocky": "^0.1.21",
+    "flocky": "^0.2.2",
     "glob": "^7.1.5",
     "jest": "^24.9.0",
     "node-fetch": "^2.6.0",

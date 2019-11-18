@@ -1,3 +1,4 @@
+import { duplicates } from 'flocky'
 import data from './data'
 
 it('has the correct type', () => {
@@ -9,7 +10,7 @@ it('has the correct type', () => {
 })
 
 it('does not have duplicated ids', () => {
-  const ids = data.map((node) => node.id).filter((x, i, self) => self.indexOf(x) !== i)
+  const ids = duplicates(data.map((node) => node.id))
 
   if (ids.length > 0) {
     throw new Error('Duplicated ids: ' + ids.join(', '))
