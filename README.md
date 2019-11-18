@@ -11,6 +11,7 @@ The following two import forms are supported:
 
 ## Data
 
+- `@gw2efficiency/game-data/commerce/blacklist`: A list of items that are in the commerce API but not actually tradable
 - `@gw2efficiency/game-data/home/nodes`: Additional information about home node `name` & `unlock_items`
 - `@gw2efficiency/game-data/home/cats`: All additional information about home cats (`name`, `icon`, `description`, `map_screenshot`, `release_date`)
 - `@gw2efficiency/game-data/mounts/skins`: Additional information about mount skins `unlock_items`
