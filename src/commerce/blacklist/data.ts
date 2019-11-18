@@ -324,7 +324,11 @@ const GAME_DATA_COMMERCE_BLACKLIST: Array<GameDataCommerceBlacklistItem> = [
   { id: 75761, name: 'Schematic: Iron Guards' },
   { id: 75772, name: 'Schematic: Turtle Banner' },
   { id: 75812, name: 'Schematic: Cloaking Waters' },
-  { id: 76657, name: 'Schematic: Hardened Gates' }
+  { id: 76657, name: 'Schematic: Hardened Gates' },
+
+  // Achievement Rewards
+  { id: 89293, name: 'Racing Scarf' },
+  { id: 89363, name: 'Golden Racing Scarf' }
 ]
 
 export default GAME_DATA_COMMERCE_BLACKLIST
