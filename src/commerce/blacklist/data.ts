@@ -22,6 +22,7 @@ const GAME_DATA_COMMERCE_BLACKLIST: Array<GameDataCommerceBlacklistItem> = [
   { id: 23046, name: 'PvP Salvage Kit' },
   { id: 19979, name: 'Tournament Ticket' },
   { id: 20853, name: 'Paid Tournament Token' },
+  { id: 8936, name: 'Leather Bag' },
 
   // Guild decorations
   { id: 73485, name: 'Crooked Mushroom' },
