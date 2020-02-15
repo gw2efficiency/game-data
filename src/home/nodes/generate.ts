@@ -29,7 +29,7 @@ async function run () {
         `  { `,
         `id: '${node.id}', `,
         `name: '${escapeQuotes(previousData.name)}', `,
-        `unlock_items: ${JSON.stringify(previousData.unlock_items)}`,
+        `unlock_items: ${JSON.stringify(previousData.unlock_items).replace(',', ', ')}`,
         ` }`
       ].join('')
     })
