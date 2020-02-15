@@ -27,7 +27,7 @@ const GAME_DATA_HOME_NODES: Array<GameDataHomeNode> = [
   { id: 'black_lion_expedition_board', name: 'Black Lion Expedition Contract', unlock_items: [88979] },
   { id: 'black_lion_hunters_board', name: 'Black Lion Hunters Contract', unlock_items: [81594] },
   { id: 'bloodstone_crystals', name: 'Bloodstone Crystal Node', unlock_items: [79217] },
-  { id: 'bound_hatched_chili_pepper_node', name: 'Bound Hatched Chili Pepper Home Instance Node', unlock_items: [92035] },
+  { id: 'bound_hatched_chili_pepper_node', name: 'Hatched Chili Pepper Home Instance Node', unlock_items: [92035, 92054] },
   { id: 'brandstone_node', name: 'Brandstone Node', unlock_items: [86297] },
   { id: 'candy_corn_node', name: 'Gift of Candy Corn', unlock_items: [48804] },
   { id: 'crystallized_supply_cache', name: 'Personal Crystallized Supply Cache Voucher', unlock_items: [78549] },
