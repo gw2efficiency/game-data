@@ -230,6 +230,9 @@ const GAME_DATA_ITEMS_CATEGORIES_COSMETIC_AURAS: Array<GameDataItemsCategoriesCo
   { auraKey: 'peerlessInfusions', id: 91210, name: 'Peerless Infusion' },
   { auraKey: 'peerlessInfusions', id: 91221, name: 'Peerless Infusion' },
   { auraKey: 'peerlessInfusions', id: 91236, name: 'Peerless Infusion' },
+
+  { auraKey: 'heartOfTheKhanUr', id: 91930, name: 'Heart of the Khan-Ur' },
+  { auraKey: 'heartOfTheKhanUr', id: 92023, name: 'Heart of the Khan-Ur' },
   // -- GENERATE-END --
 ]
 
