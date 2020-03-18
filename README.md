@@ -2,6 +2,13 @@
 
 Additional game data that the API does not provide.
 
+You should likely not use this yet, because it will have breaking versions until 1.0.
+
+## TODO
+
+- [ ] Enforce snake_case for all data properties
+- [ ] Add trailing commas to all generator outputs, and in prettier
+
 ## Usage
 
 The following two import forms are supported:
