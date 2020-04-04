@@ -12,7 +12,7 @@ it('does not have duplicated ids', () => {
 
 it('has at least one item per aura', () => {
   const wantedKeys = unique(AURA_ITEM_NAMES.map((x) => x.auraKey))
-  const haveKeys = unique(data.map((x) => x.auraKey))
+  const haveKeys = unique(data.map((x) => x.aura_key))
 
   const missingKeys = wantedKeys.filter((key) => !haveKeys.includes(key))
 

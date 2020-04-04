@@ -62,7 +62,7 @@ async function run() {
     matchingItems.forEach((item, itemIndex) => {
       const itemLine = [
         `  { `,
-        `auraKey: '${aura.auraKey}', `,
+        `aura_key: '${aura.auraKey}', `,
         `id: ${item.id}, `,
         `name: '${escapeQuotes(item.name)}'`,
         ` }`,
