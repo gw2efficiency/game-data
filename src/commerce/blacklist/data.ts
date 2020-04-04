@@ -329,7 +329,7 @@ const GAME_DATA_COMMERCE_BLACKLIST: Array<GameDataCommerceBlacklistItem> = [
 
   // Achievement Rewards
   { id: 89293, name: 'Racing Scarf' },
-  { id: 89363, name: 'Golden Racing Scarf' }
+  { id: 89363, name: 'Golden Racing Scarf' },
 ]
 
 export default GAME_DATA_COMMERCE_BLACKLIST

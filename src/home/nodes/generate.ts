@@ -15,7 +15,7 @@ const END_MARKER = `// -- GENERATE-END --`
 const REPLACE_REGEX = new RegExp(`${escapeRegex(START_MARKER)}(.*)${escapeRegex(END_MARKER)}`, 's')
 const EMPTY_DATA: GameDataHomeNode = { id: '', name: '', unlock_items: [] }
 
-async function run () {
+async function run() {
   const file = fs.readFileSync(FILE_PATH, 'utf-8')
 
   const response = await fetch('https://api.guildwars2.com/v2/home/nodes?ids=all')
@@ -30,7 +30,7 @@ async function run () {
         `id: '${node.id}', `,
         `name: '${escapeQuotes(previousData.name)}', `,
         `unlock_items: ${JSON.stringify(previousData.unlock_items).replace(',', ', ')}`,
-        ` }`
+        ` }`,
       ].join('')
     })
     .join(',\n')

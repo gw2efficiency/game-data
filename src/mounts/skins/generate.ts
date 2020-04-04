@@ -16,7 +16,7 @@ const END_MARKER = `// -- GENERATE-END --`
 const REPLACE_REGEX = new RegExp(`${escapeRegex(START_MARKER)}(.*)${escapeRegex(END_MARKER)}`, 's')
 const EMPTY_DATA: GameDataMountSkin = { id: 0, name: '', unlock_items: [] }
 
-async function run () {
+async function run() {
   const file = fs.readFileSync(FILE_PATH, 'utf-8')
 
   const response = await fetch('https://api.guildwars2.com/v2/mounts/skins?ids=all')
@@ -31,7 +31,7 @@ async function run () {
         `id: ${skin.id}, `,
         `name: '${escapeQuotes(skin.name)}', `,
         `unlock_items: ${JSON.stringify(previousData.unlock_items)}`,
-        ` }`
+        ` }`,
       ].join('')
     })
     .join(',\n')

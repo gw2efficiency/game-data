@@ -19,10 +19,10 @@ const EMPTY_DATA: GameDataHomeCat = {
   icon: '',
   description: '',
   map_screenshot: '',
-  release_date: ''
+  release_date: '',
 }
 
-async function run () {
+async function run() {
   const file = fs.readFileSync(FILE_PATH, 'utf-8')
 
   const response = await fetch('https://api.guildwars2.com/v2/home/cats?ids=all')
@@ -42,7 +42,7 @@ async function run () {
           previousData.map_screenshot ? `'${previousData.map_screenshot}'` : 'null'
         }, `,
         `release_date: '${previousData.release_date}'`,
-        ` }`
+        ` }`,
       ].join('')
     })
     .join(',\n')

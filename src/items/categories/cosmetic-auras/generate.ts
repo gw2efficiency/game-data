@@ -28,7 +28,7 @@ export const AURA_ITEM_NAMES: Array<AuraItemName> = [
   { auraKey: 'crystalInfusions', match: /^Crystal Infusion of .*$/ },
   { auraKey: 'mysticInfusions', match: /^Mystic Infusion$/ },
   { auraKey: 'peerlessInfusions', match: /^Peerless Infusion$/ },
-  { auraKey: 'heartOfTheKhanUr', match: /^Heart of the Khan-Ur$/ }
+  { auraKey: 'heartOfTheKhanUr', match: /^Heart of the Khan-Ur$/ },
 ]
 
 interface UApiItem {
@@ -41,7 +41,7 @@ const START_MARKER = `// -- GENERATE-START --`
 const END_MARKER = `// -- GENERATE-END --`
 const REPLACE_REGEX = new RegExp(`${escapeRegex(START_MARKER)}(.*)${escapeRegex(END_MARKER)}`, 's')
 
-async function run () {
+async function run() {
   const file = fs.readFileSync(FILE_PATH, 'utf-8')
 
   const response = await fetch('https://api.gw2efficiency.com/items?lang=en&ids=all')
@@ -65,7 +65,7 @@ async function run () {
         `auraKey: '${aura.auraKey}', `,
         `id: ${item.id}, `,
         `name: '${escapeQuotes(item.name)}'`,
-        ` }`
+        ` }`,
       ]
 
       generatedItems += itemLine.join('') + ','

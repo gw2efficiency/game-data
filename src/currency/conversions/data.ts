@@ -59,14 +59,14 @@ const GAME_DATA_CURRENCY_CONVERSIONS: Array<GameDataCurrencyConversion> = [
     display_item_id: 83419,
     input: [
       { _type: 'CurrencyInput', count: 50, currency: 'Trade Contract' },
-      { _type: 'CurrencyInput', count: 630, currency: 'Karma' }
+      { _type: 'CurrencyInput', count: 630, currency: 'Karma' },
     ],
     output: [
       { _type: 'ItemOutput', count: 0.94, item_id: 19683 },
       { _type: 'ItemOutput', count: 0.62, item_id: 19681 },
       { _type: 'ItemOutput', count: 1.01, item_id: 19679 },
-      { _type: 'ItemOutput', count: 0.4, item_id: 19682 }
-    ]
+      { _type: 'ItemOutput', count: 0.4, item_id: 19682 },
+    ],
   },
   {
     group: 'Mystic Forge Conversion',
@@ -78,8 +78,8 @@ const GAME_DATA_CURRENCY_CONVERSIONS: Array<GameDataCurrencyConversion> = [
     input: [{ _type: 'CurrencyInput', count: 504, currency: 'Karma' }],
     output: [
       { _type: 'ItemOutput', count: 0.875 * 1.3, item_id: 19728 }, // TODO: Write the name in here just for us devs
-      { _type: 'ItemOutput', count: 0.875 * 0.4, item_id: 19719 }
-    ]
+      { _type: 'ItemOutput', count: 0.875 * 0.4, item_id: 19719 },
+    ],
   },
   {
     group: 'Beaded Weapons',
@@ -92,9 +92,9 @@ const GAME_DATA_CURRENCY_CONVERSIONS: Array<GameDataCurrencyConversion> = [
     input: [
       { _type: 'CurrencyInput', count: 1575, currency: 'Karma' },
       { _type: 'ItemInput', count: 1, item_id: 12849 },
-      { _type: 'ItemInput', count: 1, item_id: 12895 }
+      { _type: 'ItemInput', count: 1, item_id: 12895 },
     ],
-    output: [{ _type: 'ItemOutput', count: 1, item_id: 14882 }]
+    output: [{ _type: 'ItemOutput', count: 1, item_id: 14882 }],
   },
   {
     group: 'Dye Cooking',
@@ -105,9 +105,9 @@ const GAME_DATA_CURRENCY_CONVERSIONS: Array<GameDataCurrencyConversion> = [
 
     input: [
       { _type: 'CurrencyInput', count: 196, currency: 'Karma' },
-      { _type: 'ItemInput', count: 25, item_id: 12250 }
+      { _type: 'ItemInput', count: 25, item_id: 12250 },
     ],
-    output: [{ _type: 'ItemOutput', count: 1, item_id: 12758 }]
+    output: [{ _type: 'ItemOutput', count: 1, item_id: 12758 }],
   },
   {
     group: 'Karmic Converter',
@@ -128,10 +128,10 @@ const GAME_DATA_CURRENCY_CONVERSIONS: Array<GameDataCurrencyConversion> = [
           { _type: 'ItemOutput', count: 1, item_id: 24289 },
           { _type: 'ItemOutput', count: 1, item_id: 24300 },
           { _type: 'ItemOutput', count: 1, item_id: 24283 },
-          { _type: 'ItemOutput', count: 1, item_id: 24295 }
-        ]
-      }
-    ]
+          { _type: 'ItemOutput', count: 1, item_id: 24295 },
+        ],
+      },
+    ],
   },
   {
     group: 'Jewelry Boxes',
@@ -157,8 +157,8 @@ const GAME_DATA_CURRENCY_CONVERSIONS: Array<GameDataCurrencyConversion> = [
       { _type: 'ItemOutput', count: 0.004, item_id: 24325 },
       { _type: 'ItemOutput', count: 0.004, item_id: 24320 },
       { _type: 'ItemOutput', count: 0.004, item_id: 24315 },
-      { _type: 'ItemOutput', count: 0.004, item_id: 24310 }
-    ]
+      { _type: 'ItemOutput', count: 0.004, item_id: 24310 },
+    ],
   },
   {
     group: 'Mystic clovers',
@@ -169,7 +169,7 @@ const GAME_DATA_CURRENCY_CONVERSIONS: Array<GameDataCurrencyConversion> = [
       { _type: 'CurrencyInput', count: 2100, currency: 'Karma' },
       { _type: 'CurrencyInput', count: 0.6, currency: 'Spirit Shard' },
       { _type: 'ItemInput', count: 1, item_id: 19976 },
-      { _type: 'ItemInput', count: 1, item_id: 19721 }
+      { _type: 'ItemInput', count: 1, item_id: 19721 },
     ],
 
     output: [
@@ -195,8 +195,8 @@ const GAME_DATA_CURRENCY_CONVERSIONS: Array<GameDataCurrencyConversion> = [
       { _type: 'ItemOutput', count: 0.004 * 1, item_id: 24310 },
       { _type: 'ItemOutput', count: 0.0104 * 1, item_id: 24335 },
       { _type: 'ItemOutput', count: 0.0109 * 5, item_id: 19976 },
-      { _type: 'ItemOutput', count: 0.0151 * 1, item_id: 9267 }
-    ]
+      { _type: 'ItemOutput', count: 0.0151 * 1, item_id: 9267 },
+    ],
   },
   {
     group: "Pact Scout's Mapping Materials",
@@ -211,8 +211,8 @@ const GAME_DATA_CURRENCY_CONVERSIONS: Array<GameDataCurrencyConversion> = [
       { _type: 'ItemOutput', count: 6, item_id: 24337 },
       { _type: 'ItemOutput', count: 23, item_id: 24286 },
       { _type: 'ItemOutput', count: 20, item_id: 43773 },
-      { _type: 'ItemOutput', count: 4, item_id: 24338 }
-    ]
+      { _type: 'ItemOutput', count: 4, item_id: 24338 },
+    ],
   },
 
   // Example: Laurels
@@ -234,10 +234,10 @@ const GAME_DATA_CURRENCY_CONVERSIONS: Array<GameDataCurrencyConversion> = [
           { _type: 'ItemOutput', count: (2 + 4) / 2, item_id: 24286 },
           { _type: 'ItemOutput', count: (2 + 4) / 2, item_id: 24298 },
           { _type: 'ItemOutput', count: (2 + 4) / 2, item_id: 24280 },
-          { _type: 'ItemOutput', count: (2 + 4) / 2, item_id: 24292 }
-        ]
-      }
-    ]
+          { _type: 'ItemOutput', count: (2 + 4) / 2, item_id: 24292 },
+        ],
+      },
+    ],
   },
   {
     group: 'Laurel Merchant',
@@ -255,8 +255,8 @@ const GAME_DATA_CURRENCY_CONVERSIONS: Array<GameDataCurrencyConversion> = [
       { _type: 'ItemOutput', count: 9, item_id: 24284 },
       { _type: 'ItemOutput', count: 9, item_id: 24296 },
       { _type: 'ItemOutput', count: 9, item_id: 24278 },
-      { _type: 'ItemOutput', count: 9, item_id: 24290 }
-    ]
+      { _type: 'ItemOutput', count: 9, item_id: 24290 },
+    ],
   },
 
   // Example: Dungeons
@@ -269,8 +269,8 @@ const GAME_DATA_CURRENCY_CONVERSIONS: Array<GameDataCurrencyConversion> = [
     input: [{ _type: 'CurrencyInput', count: 210, currency: 'Seal of Beetletun' }],
     output: [
       { _type: 'ItemOutput', count: 0.62, item_id: 46684 },
-      { _type: 'ItemOutput', count: 1.25, item_id: 19721 }
-    ]
+      { _type: 'ItemOutput', count: 1.25, item_id: 19721 },
+    ],
   },
   {
     group: 'Inscriptions & Insignias',
@@ -281,8 +281,8 @@ const GAME_DATA_CURRENCY_CONVERSIONS: Array<GameDataCurrencyConversion> = [
     input: [{ _type: 'CurrencyInput', count: 210, currency: 'Seal of Beetletun' }],
     output: [
       { _type: 'ItemOutput', count: 0.42, item_id: 46684 },
-      { _type: 'ItemOutput', count: 0.875, item_id: 19721 }
-    ]
+      { _type: 'ItemOutput', count: 0.875, item_id: 19721 },
+    ],
   },
   {
     group: 'Dungeon Recipes',
@@ -295,9 +295,9 @@ const GAME_DATA_CURRENCY_CONVERSIONS: Array<GameDataCurrencyConversion> = [
         _type: 'ItemOutput',
         count: 1,
         item_id: 36521,
-        price_type: 'crafting_profit'
-      }
-    ]
+        price_type: 'crafting_profit',
+      },
+    ],
   },
 
   // Example: Spirit Shards
@@ -311,9 +311,9 @@ const GAME_DATA_CURRENCY_CONVERSIONS: Array<GameDataCurrencyConversion> = [
       { _type: 'CurrencyInput', count: 0.1, currency: 'Spirit Shard' },
       { _type: 'ItemInput', count: 1, item_id: 19739 },
       { _type: 'ItemInput', count: 250, item_id: 19718 },
-      { _type: 'ItemInput', count: 5, item_id: 24273 }
+      { _type: 'ItemInput', count: 5, item_id: 24273 },
     ],
-    output: [{ _type: 'ItemOutput', count: 86.5, item_id: 19739 }]
+    output: [{ _type: 'ItemOutput', count: 86.5, item_id: 19739 }],
   },
   {
     group: 'Named Weapons',
@@ -322,7 +322,7 @@ const GAME_DATA_CURRENCY_CONVERSIONS: Array<GameDataCurrencyConversion> = [
 
     // TODO: Do we want to show the crafting inputs here?
     input: [{ _type: 'CurrencyInput', count: 50, currency: 'Spirit Shard' }],
-    output: [{ _type: 'ItemOutput', count: 1, item_id: 31046, price_type: 'crafting_profit' }]
+    output: [{ _type: 'ItemOutput', count: 1, item_id: 31046, price_type: 'crafting_profit' }],
   },
 
   // Example: Badges of Honor
@@ -332,7 +332,7 @@ const GAME_DATA_CURRENCY_CONVERSIONS: Array<GameDataCurrencyConversion> = [
     display_item_id: 21161,
 
     input: [{ _type: 'CurrencyInput', count: 6, currency: 'Badge of Honor' }],
-    output: [{ _type: 'ItemOutput', count: 1, item_id: 21161 }]
+    output: [{ _type: 'ItemOutput', count: 1, item_id: 21161 }],
   },
   {
     group: 'Siege Master',
@@ -343,9 +343,9 @@ const GAME_DATA_CURRENCY_CONVERSIONS: Array<GameDataCurrencyConversion> = [
       { _type: 'CurrencyInput', count: 12, currency: 'Badge of Honor' },
       { _type: 'CurrencyInput', count: 1, currency: 'Spirit Shard' },
       { _type: 'ItemInput', count: 5, item_id: 19700 },
-      { _type: 'ItemInput', count: 5, item_id: 19722 }
+      { _type: 'ItemInput', count: 5, item_id: 19722 },
     ],
-    output: [{ _type: 'ItemOutput', count: 1, item_id: 21263 }]
+    output: [{ _type: 'ItemOutput', count: 1, item_id: 21263 }],
   },
 
   // Example: Proof of Heroics
@@ -355,7 +355,7 @@ const GAME_DATA_CURRENCY_CONVERSIONS: Array<GameDataCurrencyConversion> = [
     display_item_id: 21263,
 
     input: [{ _type: 'CurrencyInput', count: 6, currency: 'Proof of Heroics' }],
-    output: [{ _type: 'ItemOutput', count: 1, item_id: 21263 }]
+    output: [{ _type: 'ItemOutput', count: 1, item_id: 21263 }],
   },
 
   // Example: Guild Commendations
@@ -366,14 +366,14 @@ const GAME_DATA_CURRENCY_CONVERSIONS: Array<GameDataCurrencyConversion> = [
     display_item_id: 41556,
     input: [
       { _type: 'CurrencyInput', count: 10, currency: 'Guild Commendation' },
-      { _type: 'CurrencyInput', count: 8000, currency: 'Gold' }
+      { _type: 'CurrencyInput', count: 8000, currency: 'Gold' },
     ],
-    output: [{ _type: 'ItemOutput', count: 1, item_id: 41556 }]
-  }
+    output: [{ _type: 'ItemOutput', count: 1, item_id: 41556 }],
+  },
 ]
 
 // Calculate the active map bonus week, starting from the first cycle at the 8th October 2015 20:00 UTC.
-function activeMapBonusWeek () {
+function activeMapBonusWeek() {
   const CYCLES = 8
   const WEEK_MS = 7 * 24 * 60 * 60 * 1000
 
