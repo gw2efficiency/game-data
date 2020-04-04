@@ -22,19 +22,20 @@ async function run() {
   const response = await fetch('https://api.guildwars2.com/v2/mounts/skins?ids=all')
   const json = await response.json()
 
-  const mountData = json
-    .map((skin: ApiMountSkin) => {
-      const previousData = data.find((x) => x.id === skin.id) || EMPTY_DATA
+  const mountData =
+    json
+      .map((skin: ApiMountSkin) => {
+        const previousData = data.find((x) => x.id === skin.id) || EMPTY_DATA
 
-      return [
-        `  { `,
-        `id: ${skin.id}, `,
-        `name: '${escapeQuotes(skin.name)}', `,
-        `unlock_items: ${JSON.stringify(previousData.unlock_items)}`,
-        ` }`,
-      ].join('')
-    })
-    .join(',\n') + ','
+        return [
+          `  { `,
+          `id: ${skin.id}, `,
+          `name: '${escapeQuotes(skin.name)}', `,
+          `unlock_items: ${JSON.stringify(previousData.unlock_items)}`,
+          ` }`,
+        ].join('')
+      })
+      .join(',\n') + ','
 
   const content = file.replace(REPLACE_REGEX, `${START_MARKER}\n${mountData}\n  ${END_MARKER}`)
   fs.writeFileSync(FILE_PATH, content, 'utf-8')

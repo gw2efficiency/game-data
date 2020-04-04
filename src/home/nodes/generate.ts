@@ -21,19 +21,20 @@ async function run() {
   const response = await fetch('https://api.guildwars2.com/v2/home/nodes?ids=all')
   const json = await response.json()
 
-  const nodeData = json
-    .map((node: ApiHomeNode) => {
-      const previousData = data.find((x) => x.id === node.id) || EMPTY_DATA
+  const nodeData =
+    json
+      .map((node: ApiHomeNode) => {
+        const previousData = data.find((x) => x.id === node.id) || EMPTY_DATA
 
-      return [
-        `  { `,
-        `id: '${node.id}', `,
-        `name: '${escapeQuotes(previousData.name)}', `,
-        `unlock_items: ${JSON.stringify(previousData.unlock_items).replace(',', ', ')}`,
-        ` }`,
-      ].join('')
-    })
-    .join(',\n') + ','
+        return [
+          `  { `,
+          `id: '${node.id}', `,
+          `name: '${escapeQuotes(previousData.name)}', `,
+          `unlock_items: ${JSON.stringify(previousData.unlock_items).replace(',', ', ')}`,
+          ` }`,
+        ].join('')
+      })
+      .join(',\n') + ','
 
   const content = file.replace(REPLACE_REGEX, `${START_MARKER}\n${nodeData}\n  ${END_MARKER}`)
   fs.writeFileSync(FILE_PATH, content, 'utf-8')

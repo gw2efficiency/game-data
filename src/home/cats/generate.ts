@@ -28,24 +28,25 @@ async function run() {
   const response = await fetch('https://api.guildwars2.com/v2/home/cats?ids=all')
   const json = await response.json()
 
-  const catData = json
-    .map((cat: ApiHomeCat) => {
-      const previousData = data.find((x) => x.id === cat.id) || EMPTY_DATA
+  const catData =
+    json
+      .map((cat: ApiHomeCat) => {
+        const previousData = data.find((x) => x.id === cat.id) || EMPTY_DATA
 
-      return [
-        `  { `,
-        `id: ${cat.id}, `,
-        `name: '${escapeQuotes(previousData.name)}', `,
-        `icon: '${previousData.icon}', `,
-        `description: \`${previousData.description}\`, `,
-        `map_screenshot: ${
-          previousData.map_screenshot ? `'${previousData.map_screenshot}'` : 'null'
-        }, `,
-        `release_date: '${previousData.release_date}'`,
-        ` }`,
-      ].join('')
-    })
-    .join(',\n') + ','
+        return [
+          `  { `,
+          `id: ${cat.id}, `,
+          `name: '${escapeQuotes(previousData.name)}', `,
+          `icon: '${previousData.icon}', `,
+          `description: \`${previousData.description}\`, `,
+          `map_screenshot: ${
+            previousData.map_screenshot ? `'${previousData.map_screenshot}'` : 'null'
+          }, `,
+          `release_date: '${previousData.release_date}'`,
+          ` }`,
+        ].join('')
+      })
+      .join(',\n') + ','
 
   const content = file.replace(REPLACE_REGEX, `${START_MARKER}\n${catData}\n  ${END_MARKER}`)
   fs.writeFileSync(FILE_PATH, content, 'utf-8')
