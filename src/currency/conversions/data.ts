@@ -1,3 +1,6 @@
+// @@@ WIP @@@
+// THIS IS A WORK IN PROGRESS. IT WILL CHANGE. DO NOT USE.
+
 export interface GameDataCurrencyConversion {
   group: string // Other name? E.g. @method@ or similar?
   group_help_description?: string // ...

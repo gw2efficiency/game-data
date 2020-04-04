@@ -65,7 +65,7 @@ const GAME_DATA_HOME_NODES: Array<GameDataHomeNode> = [
   { id: 'snow_truffle_node', name: 'Snow Truffle Harvesting Node', unlock_items: [68092] },
   { id: 'sprocket_generator', name: 'Gift of Sprockets', unlock_items: [49825] },
   { id: 'winterberry_bush', name: 'Winterberry Bush Node', unlock_items: [79903] },
-  { id: 'wintersday_tree', name: 'Gift of Magnanimity', unlock_items: [68367] }
+  { id: 'wintersday_tree', name: 'Gift of Magnanimity', unlock_items: [68367] },
   // -- GENERATE-END --
 ]
 

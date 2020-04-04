@@ -45,7 +45,7 @@ async function run() {
         ` }`,
       ].join('')
     })
-    .join(',\n')
+    .join(',\n') + ','
 
   const content = file.replace(REPLACE_REGEX, `${START_MARKER}\n${catData}\n  ${END_MARKER}`)
   fs.writeFileSync(FILE_PATH, content, 'utf-8')

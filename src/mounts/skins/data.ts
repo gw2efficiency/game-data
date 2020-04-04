@@ -185,7 +185,7 @@ const GAME_DATA_MOUNT_SKINS: Array<GameDataMountSkin> = [
   { id: 218, name: 'Vital Geode', unlock_items: [91795] },
   { id: 220, name: 'Primal Spirit', unlock_items: [91982] },
   { id: 231, name: 'Infernal Horror', unlock_items: [92396] },
-  { id: 250, name: 'Sacred Pegasus', unlock_items: [92726] }
+  { id: 250, name: 'Sacred Pegasus', unlock_items: [92726] },
   // -- GENERATE-END --
 ]
 
