@@ -62,6 +62,7 @@ const GAME_DATA_HOME_NODES: Array<GameDataHomeNode> = [
   { id: 'platinum_ore_node', name: 'Platinum Mining Node', unlock_items: [68097] },
   { id: 'primordial_orchid', name: 'Fire Orchid Node', unlock_items: [81115] },
   { id: 'quartz_node', name: 'Gift of Quartz', unlock_items: [43902] },
+  { id: 'salvage_pile', name: 'Salvage Pile Node', unlock_items: [93503] },
   { id: 'snow_truffle_node', name: 'Snow Truffle Harvesting Node', unlock_items: [68092] },
   { id: 'sprocket_generator', name: 'Gift of Sprockets', unlock_items: [49825] },
   { id: 'winterberry_bush', name: 'Winterberry Bush Node', unlock_items: [79903] },
