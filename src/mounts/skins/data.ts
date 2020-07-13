@@ -204,6 +204,8 @@ const GAME_DATA_MOUNT_SKINS: Array<GameDataMountSkin> = [
   { id: 278, name: 'Awakened Roller Beetle', unlock_items: [93333] },
   { id: 279, name: 'Vigilant Saberclaw', unlock_items: [93333] },
   { id: 280, name: 'Frostsoul Skyscale', unlock_items: [93333] },
+  { id: 287, name: 'Mordrem Alpha', unlock_items: [93666] },
+  { id: 292, name: 'Dark Monarch', unlock_items: [93703] },
   // -- GENERATE-END --
 ]
 

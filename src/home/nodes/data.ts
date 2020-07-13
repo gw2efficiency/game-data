@@ -32,6 +32,7 @@ const GAME_DATA_HOME_NODES: Array<GameDataHomeNode> = [
   { id: 'bound_hatched_chili_pepper_node', name: 'Hatched Chili Pepper Home Instance Node', unlock_items: [92035, 92054] },
   { id: 'brandstone_node', name: 'Brandstone Node', unlock_items: [86297] },
   { id: 'candy_corn_node', name: 'Gift of Candy Corn', unlock_items: [48804] },
+  { id: 'commemorative_dragon_pinata', name: 'Commemorative Dragon Pinata', unlock_items: [93686] },
   { id: 'crystallized_supply_cache', name: 'Personal Crystallized Supply Cache Voucher', unlock_items: [78549] },
   { id: 'difluorite_crystal_cluster_node', name: 'Difluorite Crystal Cluster Node', unlock_items: [87132] },
   { id: 'dragon_crystal', name: 'Dragon Crystal Home Instance Node', unlock_items: [89786] },
