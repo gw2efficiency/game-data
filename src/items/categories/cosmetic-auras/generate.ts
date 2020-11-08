@@ -10,26 +10,41 @@ interface AuraItemName {
 }
 
 export const AURA_ITEM_NAMES: Array<AuraItemName> = [
+  // Achievement
   { auraKey: 'kodasWarmthEnrichment', match: /^Koda's Warmth Enrichment$/ },
-  { auraKey: 'chakEggSacks', match: /^(Chak Egg Sac|Chak Infusion)$/ },
-  { auraKey: 'liquidAurillium', match: /^(Vial of Liquid Aurillium|Liquid Aurillium Infusion)$/ },
+  { auraKey: 'frostLegionInfusion', match: /^Frost Legion Infusion$/ },
+
+  // Events
   { auraKey: 'preservedQueenBees', match: /^(Preserved Queen Bee|Queen Bee Infusion)$/ },
-  { auraKey: 'ghostlyInfusions', match: /^Ghostly Infusion$/ },
-  { auraKey: 'emberInfusions', match: /^Ember Infusion$/ },
-  { auraKey: 'phospholuminescentInfusions', match: /^Phospholuminescent Infusion$/ },
-  { auraKey: 'polysaturatingInfusions', match: /^Polysaturating Reverberating Infusion .*$/ },
-  { auraKey: 'luminescentRefractors', match: /^Polyluminescent Undulating .*$/ },
+  { auraKey: 'liquidAurillium', match: /^(Vial of Liquid Aurillium|Liquid Aurillium Infusion)$/ },
+  { auraKey: 'chakEggSacks', match: /^(Chak Egg Sac|Chak Infusion)$/ },
+  { auraKey: 'festiveConfettiInfusions', match: /^Festive Confetti Infusion$/ },
+  { auraKey: 'crystalInfusions', match: /^Crystal Infusion of .*$/ },
+  { auraKey: 'heartOfTheKhanUr', match: /^Heart of the Khan-Ur$/ },
+
+  // Fractals of the Mists
   { auraKey: 'celestialInfusion', match: /^Celestial Infusion .*$/ },
+
+  // Halloween
+  { auraKey: 'phospholuminescentInfusions', match: /^Phospholuminescent Infusion$/ },
+  { auraKey: 'luminescentRefractors', match: /^Polyluminescent Undulating .*$/ },
+  { auraKey: 'polysaturatingInfusions', match: /^Polysaturating Reverberating Infusion .*$/ },
+  { auraKey: 'emberInfusions', match: /^Ember Infusion$/ },
+
+  // Mystic Forge
+  { auraKey: 'mysticInfusions', match: /^Mystic Infusion$/ },
+
+  // Raids
+  { auraKey: 'ghostlyInfusions', match: /^Ghostly Infusion$/ },
+  { auraKey: 'peerlessInfusions', match: /^Peerless Infusion$/ },
+
+  // Super Adventure Box
+  { auraKey: 'baubleInfusions', match: /^Moto's Unstable Bauble Infusion: .*$/ },
+
+  // Wintersday
   { auraKey: 'wintersHeartInfusions', match: /^Winter's Heart Infusion$/ },
   { auraKey: 'snowDiamondInfusions', match: /^Snow Diamond Infusion$/ },
   { auraKey: 'toyShellInfusions', match: /^Toy-Shell Infusion$/ },
-  { auraKey: 'baubleInfusions', match: /^Moto's Unstable Bauble Infusion: .*$/ },
-  { auraKey: 'festiveConfettiInfusions', match: /^Festive Confetti Infusion$/ },
-  { auraKey: 'crystalInfusions', match: /^Crystal Infusion of .*$/ },
-  { auraKey: 'mysticInfusions', match: /^Mystic Infusion$/ },
-  { auraKey: 'peerlessInfusions', match: /^Peerless Infusion$/ },
-  { auraKey: 'heartOfTheKhanUr', match: /^Heart of the Khan-Ur$/ },
-  { auraKey: 'frostLegionInfusion', match: /^Frost Legion Infusion$/ },
 ]
 
 interface UApiItem {
