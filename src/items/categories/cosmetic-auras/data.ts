@@ -22,6 +22,10 @@ const GAME_DATA_ITEMS_CATEGORIES_COSMETIC_AURAS: Array<GameDataItemsCategoriesCo
   { aura_key: 'frostLegionInfusion', id: 93858, name: 'Frost Legion Infusion' },
   { aura_key: 'frostLegionInfusion', id: 93906, name: 'Frost Legion Infusion' },
 
+  { aura_key: 'ottersBlessingEnrichment', id: 93798, name: 'Otter\'s Blessing Enrichment' },
+
+  { aura_key: 'celebratoryBirthdayEnrichment', id: 93953, name: 'Celebratory Birthday Enrichment' },
+
   { aura_key: 'preservedQueenBees', id: 68440, name: 'Preserved Queen Bee' },
   { aura_key: 'preservedQueenBees', id: 77594, name: 'Preserved Queen Bee' },
   { aura_key: 'preservedQueenBees', id: 81638, name: 'Queen Bee Infusion' },
@@ -96,6 +100,33 @@ const GAME_DATA_ITEMS_CATEGORIES_COSMETIC_AURAS: Array<GameDataItemsCategoriesCo
   { aura_key: 'celestialInfusion', id: 85833, name: 'Celestial Infusion (Red)' },
   { aura_key: 'celestialInfusion', id: 85989, name: 'Celestial Infusion (Blue)' },
   { aura_key: 'celestialInfusion', id: 86347, name: 'Celestial Infusion (Blue)' },
+
+  { aura_key: 'celestialInfusionBlue', id: 81761, name: 'Celestial Infusion (Blue)' },
+  { aura_key: 'celestialInfusionBlue', id: 81779, name: 'Celestial Infusion (Blue)' },
+  { aura_key: 'celestialInfusionBlue', id: 81811, name: 'Celestial Infusion (Blue)' },
+  { aura_key: 'celestialInfusionBlue', id: 81878, name: 'Celestial Infusion (Blue)' },
+  { aura_key: 'celestialInfusionBlue', id: 81919, name: 'Celestial Infusion (Blue)' },
+  { aura_key: 'celestialInfusionBlue', id: 81991, name: 'Celestial Infusion (Blue)' },
+  { aura_key: 'celestialInfusionBlue', id: 85989, name: 'Celestial Infusion (Blue)' },
+  { aura_key: 'celestialInfusionBlue', id: 86347, name: 'Celestial Infusion (Blue)' },
+
+  { aura_key: 'celestialInfusionRed', id: 81783, name: 'Celestial Infusion (Red)' },
+  { aura_key: 'celestialInfusionRed', id: 81792, name: 'Celestial Infusion (Red)' },
+  { aura_key: 'celestialInfusionRed', id: 81814, name: 'Celestial Infusion (Red)' },
+  { aura_key: 'celestialInfusionRed', id: 81927, name: 'Celestial Infusion (Red)' },
+  { aura_key: 'celestialInfusionRed', id: 82062, name: 'Celestial Infusion (Red)' },
+  { aura_key: 'celestialInfusionRed', id: 82070, name: 'Celestial Infusion (Red)' },
+  { aura_key: 'celestialInfusionRed', id: 85646, name: 'Celestial Infusion (Red)' },
+  { aura_key: 'celestialInfusionRed', id: 85833, name: 'Celestial Infusion (Red)' },
+
+  { aura_key: 'abyssalInfusion', id: 94010, name: 'Abyssal Infusion' },
+  { aura_key: 'abyssalInfusion', id: 94024, name: 'Abyssal Infusion' },
+  { aura_key: 'abyssalInfusion', id: 94028, name: 'Abyssal Infusion' },
+  { aura_key: 'abyssalInfusion', id: 94039, name: 'Abyssal Infusion' },
+  { aura_key: 'abyssalInfusion', id: 94078, name: 'Abyssal Infusion' },
+  { aura_key: 'abyssalInfusion', id: 94079, name: 'Abyssal Infusion' },
+  { aura_key: 'abyssalInfusion', id: 94090, name: 'Abyssal Infusion' },
+  { aura_key: 'abyssalInfusion', id: 94091, name: 'Abyssal Infusion' },
 
   { aura_key: 'phospholuminescentInfusions', id: 79639, name: 'Phospholuminescent Infusion' },
   { aura_key: 'phospholuminescentInfusions', id: 79653, name: 'Phospholuminescent Infusion' },

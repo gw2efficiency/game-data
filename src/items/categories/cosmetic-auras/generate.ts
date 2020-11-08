@@ -13,6 +13,8 @@ export const AURA_ITEM_NAMES: Array<AuraItemName> = [
   // Achievement
   { auraKey: 'kodasWarmthEnrichment', match: /^Koda's Warmth Enrichment$/ },
   { auraKey: 'frostLegionInfusion', match: /^Frost Legion Infusion$/ },
+  { auraKey: 'ottersBlessingEnrichment', match: /^Otter's Blessing Enrichment$/ },
+  { auraKey: 'celebratoryBirthdayEnrichment', match: /^Celebratory Birthday Enrichment$/ },
 
   // Events
   { auraKey: 'preservedQueenBees', match: /^(Preserved Queen Bee|Queen Bee Infusion)$/ },
@@ -24,6 +26,9 @@ export const AURA_ITEM_NAMES: Array<AuraItemName> = [
 
   // Fractals of the Mists
   { auraKey: 'celestialInfusion', match: /^Celestial Infusion .*$/ },
+  { auraKey: 'celestialInfusionBlue', match: /^Celestial Infusion \(Blue\)$/ },
+  { auraKey: 'celestialInfusionRed', match: /^Celestial Infusion \(Red\)$/ },
+  { auraKey: 'abyssalInfusion', match: /^Abyssal Infusion$/ },
 
   // Halloween
   { auraKey: 'phospholuminescentInfusions', match: /^Phospholuminescent Infusion$/ },
