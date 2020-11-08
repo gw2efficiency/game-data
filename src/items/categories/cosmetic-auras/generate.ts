@@ -25,7 +25,6 @@ export const AURA_ITEM_NAMES: Array<AuraItemName> = [
   { auraKey: 'heartOfTheKhanUr', match: /^Heart of the Khan-Ur$/ },
 
   // Fractals of the Mists
-  { auraKey: 'celestialInfusion', match: /^Celestial Infusion .*$/ },
   { auraKey: 'celestialInfusionBlue', match: /^Celestial Infusion \(Blue\)$/ },
   { auraKey: 'celestialInfusionRed', match: /^Celestial Infusion \(Red\)$/ },
   { auraKey: 'abyssalInfusion', match: /^Abyssal Infusion$/ },
