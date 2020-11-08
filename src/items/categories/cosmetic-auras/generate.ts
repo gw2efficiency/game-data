@@ -29,6 +29,7 @@ export const AURA_ITEM_NAMES: Array<AuraItemName> = [
   { auraKey: 'mysticInfusions', match: /^Mystic Infusion$/ },
   { auraKey: 'peerlessInfusions', match: /^Peerless Infusion$/ },
   { auraKey: 'heartOfTheKhanUr', match: /^Heart of the Khan-Ur$/ },
+  { auraKey: 'frostLegionInfusion', match: /^Frost Legion Infusion$/ },
 ]
 
 interface UApiItem {

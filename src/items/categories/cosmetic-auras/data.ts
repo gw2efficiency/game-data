@@ -239,6 +239,14 @@ const GAME_DATA_ITEMS_CATEGORIES_COSMETIC_AURAS: Array<GameDataItemsCategoriesCo
   { aura_key: 'heartOfTheKhanUr', id: 92023, name: 'Heart of the Khan-Ur' },
   { aura_key: 'heartOfTheKhanUr', id: 92073, name: 'Heart of the Khan-Ur' },
   { aura_key: 'heartOfTheKhanUr', id: 92075, name: 'Heart of the Khan-Ur' },
+
+  { aura_key: 'frostLegionInfusion', id: 93720, name: 'Frost Legion Infusion' },
+  { aura_key: 'frostLegionInfusion', id: 93758, name: 'Frost Legion Infusion' },
+  { aura_key: 'frostLegionInfusion', id: 93773, name: 'Frost Legion Infusion' },
+  { aura_key: 'frostLegionInfusion', id: 93775, name: 'Frost Legion Infusion' },
+  { aura_key: 'frostLegionInfusion', id: 93829, name: 'Frost Legion Infusion' },
+  { aura_key: 'frostLegionInfusion', id: 93858, name: 'Frost Legion Infusion' },
+  { aura_key: 'frostLegionInfusion', id: 93906, name: 'Frost Legion Infusion' },
   // -- GENERATE-END --
 ]
 
