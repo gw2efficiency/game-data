@@ -21,6 +21,7 @@ const GAME_DATA_ITEMS_CATEGORIES_COSMETIC_AURAS: Array<GameDataItemsCategoriesCo
   { aura_key: 'frostLegionInfusion', id: 93829, name: 'Frost Legion Infusion' },
   { aura_key: 'frostLegionInfusion', id: 93858, name: 'Frost Legion Infusion' },
   { aura_key: 'frostLegionInfusion', id: 93906, name: 'Frost Legion Infusion' },
+  { aura_key: 'frostLegionInfusion', id: 93920, name: 'Frost Legion Infusion' },
 
   { aura_key: 'ottersBlessingEnrichment', id: 93798, name: 'Otter\'s Blessing Enrichment' },
 
