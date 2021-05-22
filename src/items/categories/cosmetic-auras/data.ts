@@ -69,6 +69,7 @@ const GAME_DATA_ITEMS_CATEGORIES_COSMETIC_AURAS: Array<GameDataItemsCategoriesCo
 
   { aura_key: 'crystalInfusions', id: 88522, name: 'Crystal Infusion of Vitality' },
   { aura_key: 'crystalInfusions', id: 88603, name: 'Crystal Infusion of Healing' },
+  { aura_key: 'crystalInfusions', id: 88683, name: 'Crystal Infusion of Toughness' },
   { aura_key: 'crystalInfusions', id: 88732, name: 'Crystal Infusion of Condition Damage' },
   { aura_key: 'crystalInfusions', id: 88770, name: 'Crystal Infusion of Boon Duration' },
   { aura_key: 'crystalInfusions', id: 88771, name: 'Crystal Infusion of Power' },

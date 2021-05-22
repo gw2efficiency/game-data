@@ -185,7 +185,7 @@ const GAME_DATA_MOUNT_SKINS: Array<GameDataMountSkin> = [
   { id: 218, name: 'Vital Geode', unlock_items: [91795] },
   { id: 220, name: 'Primal Spirit', unlock_items: [91982] },
   { id: 222, name: 'Mad King Skimmer', unlock_items: [92153] },
-  { id: 223, name: 'Mad King Griffon', unlock_items: [92156] },
+  { id: 223, name: 'Mad King Griffon Skin', unlock_items: [92156] },
   { id: 224, name: 'Mad King Jackal', unlock_items: [92185] },
   { id: 225, name: 'Mad King Springer', unlock_items: [92160] },
   { id: 226, name: 'Mad King Raptor', unlock_items: [92189] },
