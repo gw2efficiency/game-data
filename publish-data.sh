@@ -13,7 +13,7 @@ echo ">> Built"
 cd build/ || exit 1
 echo ">> Switched into build"
 
-yarn publish --access=public
+yarn publish --non-interactive --access=public
 echo ">> Published"
 
 git push
