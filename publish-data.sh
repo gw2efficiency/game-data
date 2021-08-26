@@ -1,4 +1,5 @@
 #!/usr/bin/env sh
+set -e
 
 rm -rf build/
 yarn version --patch
