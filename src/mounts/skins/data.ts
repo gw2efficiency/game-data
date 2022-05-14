@@ -283,6 +283,12 @@ const GAME_DATA_MOUNT_SKINS: Array<GameDataMountSkin> = [
   { id: 373, name: 'Lucent Long Ear', unlock_items: [95268] },
   { id: 374, name: 'Kintsugi Raptor', unlock_items: [95268] },
   { id: 375, name: 'Dappled Reef Glaucus', unlock_items: [95268] },
+  { id: 380, name: 'Hound of Balthazar', unlock_items: [95364] },
+  { id: 391, name: 'Synergetics Hoverbike', unlock_items: [95487] },
+  { id: 396, name: 'Synergetics Cyberscale', unlock_items: [95493] },
+  { id: 397, name: 'Siege Turtle', unlock_items: [] },
+  { id: 403, name: 'Plush Raptor', unlock_items: [95509] },
+  { id: 406, name: 'White Tiger', unlock_items: [95574] },
   // -- GENERATE-END --
 ]
 
