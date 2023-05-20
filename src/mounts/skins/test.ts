@@ -18,7 +18,7 @@ it('does not have duplicated ids', () => {
 })
 
 it('is not missing any unlock_items', () => {
-  const BASE_SKINS = [1, 2, 3, 4, 6, 103, 161, 186]
+  const BASE_SKINS = [1, 2, 3, 4, 6, 103, 161, 186, 397]
 
   const missingUnlockItemsIds = data
     .filter((skin) => skin.unlock_items.length === 0 && !BASE_SKINS.includes(skin.id))
