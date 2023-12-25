@@ -52,6 +52,11 @@ export const AURA_ITEM_NAMES: Array<AuraItemName> = [
   { auraKey: 'wintersHeartInfusions', match: /^Winter's Heart Infusion$/ },
   { auraKey: 'snowDiamondInfusions', match: /^Snow Diamond Infusion$/ },
   { auraKey: 'toyShellInfusions', match: /^Toy-Shell Infusion$/ },
+
+  // Strike Missions
+  { auraKey: 'imperialEverbloom', match: /^Imperial Everbloom$/ },
+  { auraKey: 'clockworkInfusion', match: /^Clockwork Infusion$/ },
+  { auraKey: 'jotunInfusion', match: /^Jotun Infusion$/ },
 ]
 
 interface UApiItem {
