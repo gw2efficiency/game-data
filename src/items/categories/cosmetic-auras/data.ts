@@ -305,6 +305,31 @@ const GAME_DATA_ITEMS_CATEGORIES_COSMETIC_AURAS: Array<GameDataItemsCategoriesCo
   { aura_key: 'toyShellInfusions', id: 89415, name: 'Toy-Shell Infusion' },
   { aura_key: 'toyShellInfusions', id: 89426, name: 'Toy-Shell Infusion' },
   { aura_key: 'toyShellInfusions', id: 89427, name: 'Toy-Shell Infusion' },
+
+  { aura_key: 'imperialEverbloom', id: 98083, name: 'Imperial Everbloom' },
+  { aura_key: 'imperialEverbloom', id: 98088, name: 'Imperial Everbloom' },
+  { aura_key: 'imperialEverbloom', id: 98105, name: 'Imperial Everbloom' },
+  { aura_key: 'imperialEverbloom', id: 98119, name: 'Imperial Everbloom' },
+  { aura_key: 'imperialEverbloom', id: 98131, name: 'Imperial Everbloom' },
+  { aura_key: 'imperialEverbloom', id: 98145, name: 'Imperial Everbloom' },
+  { aura_key: 'imperialEverbloom', id: 98153, name: 'Imperial Everbloom' },
+  { aura_key: 'imperialEverbloom', id: 98163, name: 'Imperial Everbloom' },
+
+  { aura_key: 'clockworkInfusion', id: 99195, name: 'Clockwork Infusion' },
+  { aura_key: 'clockworkInfusion', id: 99206, name: 'Clockwork Infusion' },
+  { aura_key: 'clockworkInfusion', id: 99209, name: 'Clockwork Infusion' },
+  { aura_key: 'clockworkInfusion', id: 99213, name: 'Clockwork Infusion' },
+  { aura_key: 'clockworkInfusion', id: 99237, name: 'Clockwork Infusion' },
+  { aura_key: 'clockworkInfusion', id: 99240, name: 'Clockwork Infusion' },
+  { aura_key: 'clockworkInfusion', id: 99244, name: 'Clockwork Infusion' },
+  { aura_key: 'clockworkInfusion', id: 99248, name: 'Clockwork Infusion' },
+
+  { aura_key: 'jotunInfusion', id: 101124, name: 'Jotun Infusion' },
+  { aura_key: 'jotunInfusion', id: 101146, name: 'Jotun Infusion' },
+  { aura_key: 'jotunInfusion', id: 101226, name: 'Jotun Infusion' },
+  { aura_key: 'jotunInfusion', id: 101259, name: 'Jotun Infusion' },
+  { aura_key: 'jotunInfusion', id: 101262, name: 'Jotun Infusion' },
+  { aura_key: 'jotunInfusion', id: 101276, name: 'Jotun Infusion' },
   // -- GENERATE-END --
 ]
 
