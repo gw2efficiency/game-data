@@ -10,16 +10,16 @@ interface VariantSkinName {
 }
 
 export const VARIANT_SKIN_NAMES: Array<VariantSkinName> = [
-  // Zhaitan All
   {
-    variantKey: 'zhaitanVariantSkins',
-    match: /^Zhaitan's (Rending|Claw|Tail|Argument|Wisdom|Fang|Gaze|Scale|Breath|Voice|Bite|Weight|Flight|Persuasion|Wing|Insight) Skin$/,
-  },
+    variantKey: 'variantSkins',
+    match: /^(Zhaitan's|Mordremoth's|Kralkatorrik's|Jormag's|Primordus's|Soo-Won's) (Rending|Claw|Tail|Argument|Wisdom|Fang|Gaze|Scale|Breath|Voice|Bite|Weight|Flight|Persuasion|Wing|Insight) Skin$/,
+  }
 ]
 
 interface UApiItem {
   id: number
   name: string
+  skins: number[]
 }
 
 const FILE_PATH = path.join(__dirname, './data.ts')
@@ -49,7 +49,7 @@ async function run() {
       const itemLine = [
         `  { `,
         `variant_key: '${variant.variantKey}', `,
-        `id: ${item.id}, `,
+        `id: ${item.skins}, `,
         `name: '${escapeQuotes(item.name)}'`,
         ` }`,
       ]
