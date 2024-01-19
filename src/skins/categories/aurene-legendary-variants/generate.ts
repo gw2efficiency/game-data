@@ -5,13 +5,11 @@ import escapeRegex from 'escape-regex-string'
 import { escapeQuotes } from '../../../_helpers/generate'
 
 interface VariantSkinName {
-  variantKey: string
   match: RegExp
 }
 
 export const VARIANT_SKIN_NAMES: Array<VariantSkinName> = [
   {
-    variantKey: 'variantSkins',
     match: /^(Zhaitan's|Mordremoth's|Kralkatorrik's|Jormag's|Primordus's|Soo-Won's) (Rending|Claw|Tail|Argument|Wisdom|Fang|Gaze|Scale|Breath|Voice|Bite|Weight|Flight|Persuasion|Wing|Insight) Skin$/,
   }
 ]
@@ -29,7 +27,6 @@ const REPLACE_REGEX = new RegExp(`${escapeRegex(START_MARKER)}(.*)${escapeRegex(
 
 async function run() {
   const file = fs.readFileSync(FILE_PATH, 'utf-8')
-
   const response = await fetch('https://api.gw2efficiency.com/items?lang=en&ids=all')
   const items: Array<UApiItem> = await response.json()
 
@@ -39,7 +36,7 @@ async function run() {
     const matchingItems = items.filter((item) => item.name.match(variant.match))
 
     if (matchingItems.length === 0) {
-      console.error(`Could not find any items for '${variant.variantKey}'`)
+      console.error(`Could not find any items for '${variantIndex}'`)
       process.exit(1)
     }
 
@@ -48,9 +45,8 @@ async function run() {
     matchingItems.forEach((item, itemIndex) => {
       const itemLine = [
         `  { `,
-        `variant_key: '${variant.variantKey}', `,
-        `id: ${item.skins}, `,
-        `name: '${escapeQuotes(item.name)}'`,
+        `id: ${item.skins[0]}, `,
+        `name: '${escapeQuotes(item.name.replace(/ Skin$/, ''))}'`,
         ` }`,
       ]
 
