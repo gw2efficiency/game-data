@@ -11,7 +11,7 @@ interface VariantSkinName {
 export const VARIANT_SKIN_NAMES: Array<VariantSkinName> = [
   {
     match: /^(Zhaitan's|Mordremoth's|Kralkatorrik's|Jormag's|Primordus's|Soo-Won's) (Rending|Claw|Tail|Argument|Wisdom|Fang|Gaze|Scale|Breath|Voice|Bite|Weight|Flight|Persuasion|Wing|Insight) Skin$/,
-  }
+  },
 ]
 
 interface UApiItem {

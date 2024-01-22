@@ -1,5 +1,4 @@
 export interface GameDataSkinsCategoriesAureneLegendaryVariants {
-
   /** The skin id */
   id: number
 
