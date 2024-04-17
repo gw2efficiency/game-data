@@ -17,6 +17,7 @@ export const AURA_ITEM_NAMES: Array<AuraItemName> = [
   { auraKey: 'celebratoryBirthdayEnrichment', match: /^Celebratory Birthday Enrichment$/ },
   { auraKey: 'jormagEyeInfusions', match: /^Jormag (Left|Right) Eye Infusion$/ },
   { auraKey: 'primordusEyeInfusions', match: /^Primordus (Left|Right) Eye Infusion$/ },
+  { auraKey: 'wurmsBlessingEnrichment', match: /^Wurm's .* Blessing Enrichment$/ },
 
   // Events
   { auraKey: 'preservedQueenBees', match: /^(Preserved Queen Bee|Queen Bee Infusion)$/ },
@@ -26,11 +27,13 @@ export const AURA_ITEM_NAMES: Array<AuraItemName> = [
   { auraKey: 'crystalInfusions', match: /^Crystal Infusion of .*$/ },
   { auraKey: 'heartOfTheKhanUr', match: /^Heart of the Khan-Ur$/ },
   { auraKey: 'deldrimorStoneskinInfusions', match: /^Deldrimor Stoneskin Infusion$/ },
+  { auraKey: 'echoOfTheDragonvoid', match: /^Echo of the Dragonvoid$/ },
 
   // Fractals of the Mists
   { auraKey: 'celestialInfusionBlue', match: /^Celestial Infusion \(Blue\)$/ },
   { auraKey: 'celestialInfusionRed', match: /^Celestial Infusion \(Red\)$/ },
   { auraKey: 'abyssalInfusion', match: /^Abyssal Infusion$/ },
+  { auraKey: 'moteOfDarkness', match: /^Mote of Darkness$/ },
 
   // Halloween
   { auraKey: 'phospholuminescentInfusions', match: /^Phospholuminescent Infusion$/ },
@@ -57,6 +60,16 @@ export const AURA_ITEM_NAMES: Array<AuraItemName> = [
   { auraKey: 'imperialEverbloom', match: /^Imperial Everbloom$/ },
   { auraKey: 'clockworkInfusion', match: /^Clockwork Infusion$/ },
   { auraKey: 'jotunInfusion', match: /^Jotun Infusion$/ },
+  { auraKey: 'possessionInfusion', match: /^Possession Infusion$/ },
+
+  // Festivals
+  { auraKey: 'silentSymphony', match: /^Silent Symphony$/ },
+
+  // Wizard's Vault
+  { auraKey: 'arcaneFlowInfusion', match: /^Arcane Flow Infusion$/ },
+
+  // World versus World
+  { auraKey: 'mistwalkerInfusion', match: /^Mistwalker Infusion$/ },
 ]
 
 interface UApiItem {
