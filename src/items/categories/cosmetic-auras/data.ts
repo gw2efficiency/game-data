@@ -61,6 +61,13 @@ const GAME_DATA_ITEMS_CATEGORIES_COSMETIC_AURAS: Array<GameDataItemsCategoriesCo
   { aura_key: 'primordusEyeInfusions', id: 94977, name: 'Primordus Right Eye Infusion' },
   { aura_key: 'primordusEyeInfusions', id: 94978, name: 'Primordus Left Eye Infusion' },
 
+  { aura_key: 'wurmsBlessingEnrichment', id: 101126, name: 'Wurm\'s Karmic Blessing Enrichment' },
+  { aura_key: 'wurmsBlessingEnrichment', id: 101187, name: 'Wurm\'s WXP Blessing Enrichment' },
+  { aura_key: 'wurmsBlessingEnrichment', id: 101193, name: 'Wurm\'s WvW Reward Track Blessing Enrichment' },
+  { aura_key: 'wurmsBlessingEnrichment', id: 101250, name: 'Wurm\'s Experienced Blessing Enrichment' },
+  { aura_key: 'wurmsBlessingEnrichment', id: 101272, name: 'Wurm\'s Gilded Blessing Enrichment' },
+  { aura_key: 'wurmsBlessingEnrichment', id: 101302, name: 'Wurm\'s Magical Blessing Enrichment' },
+
   { aura_key: 'preservedQueenBees', id: 68440, name: 'Preserved Queen Bee' },
   { aura_key: 'preservedQueenBees', id: 77594, name: 'Preserved Queen Bee' },
   { aura_key: 'preservedQueenBees', id: 81638, name: 'Queen Bee Infusion' },
@@ -128,6 +135,15 @@ const GAME_DATA_ITEMS_CATEGORIES_COSMETIC_AURAS: Array<GameDataItemsCategoriesCo
   { aura_key: 'deldrimorStoneskinInfusions', id: 94584, name: 'Deldrimor Stoneskin Infusion' },
   { aura_key: 'deldrimorStoneskinInfusions', id: 94609, name: 'Deldrimor Stoneskin Infusion' },
 
+  { aura_key: 'echoOfTheDragonvoid', id: 97993, name: 'Echo of the Dragonvoid' },
+  { aura_key: 'echoOfTheDragonvoid', id: 98004, name: 'Echo of the Dragonvoid' },
+  { aura_key: 'echoOfTheDragonvoid', id: 98020, name: 'Echo of the Dragonvoid' },
+  { aura_key: 'echoOfTheDragonvoid', id: 98022, name: 'Echo of the Dragonvoid' },
+  { aura_key: 'echoOfTheDragonvoid', id: 98023, name: 'Echo of the Dragonvoid' },
+  { aura_key: 'echoOfTheDragonvoid', id: 98028, name: 'Echo of the Dragonvoid' },
+  { aura_key: 'echoOfTheDragonvoid', id: 98043, name: 'Echo of the Dragonvoid' },
+  { aura_key: 'echoOfTheDragonvoid', id: 98066, name: 'Echo of the Dragonvoid' },
+
   { aura_key: 'celestialInfusionBlue', id: 81761, name: 'Celestial Infusion (Blue)' },
   { aura_key: 'celestialInfusionBlue', id: 81779, name: 'Celestial Infusion (Blue)' },
   { aura_key: 'celestialInfusionBlue', id: 81811, name: 'Celestial Infusion (Blue)' },
@@ -154,6 +170,15 @@ const GAME_DATA_ITEMS_CATEGORIES_COSMETIC_AURAS: Array<GameDataItemsCategoriesCo
   { aura_key: 'abyssalInfusion', id: 94079, name: 'Abyssal Infusion' },
   { aura_key: 'abyssalInfusion', id: 94090, name: 'Abyssal Infusion' },
   { aura_key: 'abyssalInfusion', id: 94091, name: 'Abyssal Infusion' },
+
+  { aura_key: 'moteOfDarkness', id: 99869, name: 'Mote of Darkness' },
+  { aura_key: 'moteOfDarkness', id: 99878, name: 'Mote of Darkness' },
+  { aura_key: 'moteOfDarkness', id: 99880, name: 'Mote of Darkness' },
+  { aura_key: 'moteOfDarkness', id: 99881, name: 'Mote of Darkness' },
+  { aura_key: 'moteOfDarkness', id: 99882, name: 'Mote of Darkness' },
+  { aura_key: 'moteOfDarkness', id: 99887, name: 'Mote of Darkness' },
+  { aura_key: 'moteOfDarkness', id: 99894, name: 'Mote of Darkness' },
+  { aura_key: 'moteOfDarkness', id: 99898, name: 'Mote of Darkness' },
 
   { aura_key: 'phospholuminescentInfusions', id: 79639, name: 'Phospholuminescent Infusion' },
   { aura_key: 'phospholuminescentInfusions', id: 79653, name: 'Phospholuminescent Infusion' },
@@ -326,10 +351,43 @@ const GAME_DATA_ITEMS_CATEGORIES_COSMETIC_AURAS: Array<GameDataItemsCategoriesCo
 
   { aura_key: 'jotunInfusion', id: 101124, name: 'Jotun Infusion' },
   { aura_key: 'jotunInfusion', id: 101146, name: 'Jotun Infusion' },
+  { aura_key: 'jotunInfusion', id: 101169, name: 'Jotun Infusion' },
+  { aura_key: 'jotunInfusion', id: 101171, name: 'Jotun Infusion' },
   { aura_key: 'jotunInfusion', id: 101226, name: 'Jotun Infusion' },
   { aura_key: 'jotunInfusion', id: 101259, name: 'Jotun Infusion' },
   { aura_key: 'jotunInfusion', id: 101262, name: 'Jotun Infusion' },
   { aura_key: 'jotunInfusion', id: 101276, name: 'Jotun Infusion' },
+
+  { aura_key: 'possessionInfusion', id: 100008, name: 'Possession Infusion' },
+  { aura_key: 'possessionInfusion', id: 100513, name: 'Possession Infusion' },
+  { aura_key: 'possessionInfusion', id: 100806, name: 'Possession Infusion' },
+
+  { aura_key: 'silentSymphony', id: 99914, name: 'Silent Symphony' },
+  { aura_key: 'silentSymphony', id: 99921, name: 'Silent Symphony' },
+  { aura_key: 'silentSymphony', id: 99929, name: 'Silent Symphony' },
+  { aura_key: 'silentSymphony', id: 99932, name: 'Silent Symphony' },
+  { aura_key: 'silentSymphony', id: 99939, name: 'Silent Symphony' },
+  { aura_key: 'silentSymphony', id: 99940, name: 'Silent Symphony' },
+  { aura_key: 'silentSymphony', id: 99946, name: 'Silent Symphony' },
+  { aura_key: 'silentSymphony', id: 99948, name: 'Silent Symphony' },
+
+  { aura_key: 'arcaneFlowInfusion', id: 101199, name: 'Arcane Flow Infusion' },
+  { aura_key: 'arcaneFlowInfusion', id: 101223, name: 'Arcane Flow Infusion' },
+  { aura_key: 'arcaneFlowInfusion', id: 101234, name: 'Arcane Flow Infusion' },
+  { aura_key: 'arcaneFlowInfusion', id: 101237, name: 'Arcane Flow Infusion' },
+  { aura_key: 'arcaneFlowInfusion', id: 101261, name: 'Arcane Flow Infusion' },
+  { aura_key: 'arcaneFlowInfusion', id: 101263, name: 'Arcane Flow Infusion' },
+  { aura_key: 'arcaneFlowInfusion', id: 101278, name: 'Arcane Flow Infusion' },
+  { aura_key: 'arcaneFlowInfusion', id: 101279, name: 'Arcane Flow Infusion' },
+
+  { aura_key: 'mistwalkerInfusion', id: 99784, name: 'Mistwalker Infusion' },
+  { aura_key: 'mistwalkerInfusion', id: 99789, name: 'Mistwalker Infusion' },
+  { aura_key: 'mistwalkerInfusion', id: 99790, name: 'Mistwalker Infusion' },
+  { aura_key: 'mistwalkerInfusion', id: 99809, name: 'Mistwalker Infusion' },
+  { aura_key: 'mistwalkerInfusion', id: 99824, name: 'Mistwalker Infusion' },
+  { aura_key: 'mistwalkerInfusion', id: 99839, name: 'Mistwalker Infusion' },
+  { aura_key: 'mistwalkerInfusion', id: 99848, name: 'Mistwalker Infusion' },
+  { aura_key: 'mistwalkerInfusion', id: 99850, name: 'Mistwalker Infusion' },
   // -- GENERATE-END --
 ]
 
