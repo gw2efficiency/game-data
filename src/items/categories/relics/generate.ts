@@ -5,10 +5,10 @@ import escapeRegex from 'escape-regex-string'
 import data, { GameDataItemsCategoriesRelic } from './data'
 import { escapeQuotes } from '../../../_helpers/generate'
 
-interface apiItems {
+interface ApiItems {
     name: string
     id: number
-    category: number[]
+    category: Array<number>
     rarity: number
 }
 
@@ -23,12 +23,12 @@ async function run() {
 
     const response = await fetch('https://api.gw2efficiency.com/items?ids=all')
     const json = await response.json()
-    const exoticRelics = json.filter((item: apiItems) => {
+    const exoticRelics = json.filter((item: ApiItems) => {
         return item.category.length === 1 && item.category[0] === 18 && item.rarity === 5
     })
 
     const generatedItems =
-        exoticRelics.map((item: apiItems) => {
+        exoticRelics.map((item: ApiItems) => {
 
                 const previousData = data.find((x) => x.exoticId === item.id) || EMPTY_DATA
             
@@ -36,7 +36,7 @@ async function run() {
                     `  { `,
                     `name: '${escapeQuotes(item.name)}', `,
                     `exoticId: ${item.id}, `,
-                    `legendaryId: ${JSON.stringify(previousData.legendaryId)}`,
+                    `legendaryId: ${previousData.legendaryId}`,
                     ` }`,
                 ].join('')
             })
