@@ -359,8 +359,11 @@ const GAME_DATA_ITEMS_CATEGORIES_COSMETIC_AURAS: Array<GameDataItemsCategoriesCo
   { aura_key: 'jotunInfusion', id: 101276, name: 'Jotun Infusion' },
 
   { aura_key: 'possessionInfusion', id: 100008, name: 'Possession Infusion' },
+  { aura_key: 'possessionInfusion', id: 100302, name: 'Possession Infusion' },
+  { aura_key: 'possessionInfusion', id: 100407, name: 'Possession Infusion' },
   { aura_key: 'possessionInfusion', id: 100513, name: 'Possession Infusion' },
   { aura_key: 'possessionInfusion', id: 100806, name: 'Possession Infusion' },
+  { aura_key: 'possessionInfusion', id: 100914, name: 'Possession Infusion' },
 
   { aura_key: 'silentSymphony', id: 99914, name: 'Silent Symphony' },
   { aura_key: 'silentSymphony', id: 99921, name: 'Silent Symphony' },
