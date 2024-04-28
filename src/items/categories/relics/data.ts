@@ -1,12 +1,12 @@
 export interface GameDataItemsCategoriesRelic {
-    /** The name of the effect */
-    name: string
+  /** The name of the effect */
+  name: string
 
-    /** The item id of Exotic version*/
-    exoticId: number
+  /** The item id of Exotic version*/
+  exoticId: number
 
-    /** The item id of Legendary version */
-    legendaryId: number
+  /** The item id of Legendary version */
+  legendaryId: number
 }
 
 // prettier-ignore
