@@ -5,8 +5,8 @@ import escapeRegex from 'escape-regex-string'
 import { escapeQuotes } from '../../../_helpers/generate'
 
 interface ApiItem {
-  name: string
   id: number
+  name: string
   description: string
 }
 
@@ -62,8 +62,8 @@ async function run() {
       .map((filteredItem) => {
         return [
           `  { `,
-          `name: '${escapeQuotes(filteredItem.name)}', `,
-          `id: ${filteredItem.id} `,
+          `id: ${filteredItem.id}, `,
+          `name: '${escapeQuotes(filteredItem.name)}' `,
           `}`,
         ].join('')
       })
