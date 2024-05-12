@@ -1,7 +1,7 @@
-import * as path from 'path'
-import * as fs from 'fs'
-import fetch from 'node-fetch'
 import escapeRegex from 'escape-regex-string'
+import * as fs from 'fs'
+import * as path from 'path'
+import { readCacheFile } from '../../../_helpers/cache'
 import { escapeQuotes } from '../../../_helpers/generate'
 
 interface AuraItemName {
@@ -85,8 +85,7 @@ const REPLACE_REGEX = new RegExp(`${escapeRegex(START_MARKER)}(.*)${escapeRegex(
 async function run() {
   const file = fs.readFileSync(FILE_PATH, 'utf-8')
 
-  const response = await fetch('https://api.gw2efficiency.com/items?lang=en&ids=all')
-  const items: Array<UApiItem> = await response.json()
+  const items = await readCacheFile<Array<UApiItem>>('items.json')
 
   let generatedItems = ''
 

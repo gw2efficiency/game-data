@@ -1,9 +1,9 @@
-import * as path from 'path'
-import * as fs from 'fs'
-import fetch from 'node-fetch'
 import escapeRegex from 'escape-regex-string'
-import data, { GameDataItemsCategoriesRelic } from './data'
+import * as fs from 'fs'
+import * as path from 'path'
+import { readCacheFile } from '../../../_helpers/cache'
 import { escapeQuotes } from '../../../_helpers/generate'
+import data, { GameDataItemsCategoriesRelic } from './data'
 
 interface ApiItem {
   name: string
@@ -21,9 +21,8 @@ const EMPTY_DATA: GameDataItemsCategoriesRelic = { name: '', exoticId: 0, legend
 async function run() {
   const file = fs.readFileSync(FILE_PATH, 'utf-8')
 
-  const response = await fetch('https://api.gw2efficiency.com/items?ids=all')
-  const json = await response.json()
-  const exoticRelics = json.filter((item: ApiItem) => {
+  const items = await readCacheFile<Array<ApiItem>>('items.json')
+  const exoticRelics = items.filter((item) => {
     return item.category.length === 1 && item.category[0] === 18 && item.rarity === 5
   })
 

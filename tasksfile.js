@@ -7,6 +7,8 @@ function sh (command, options = {}) {
 }
 
 function generate () {
+  sh('./refresh-cache.sh')
+
   const generators = glob.sync(`src/**/generate.ts`).filter((path) => !path.includes('_helpers'))
 
   for (const generator of generators) {

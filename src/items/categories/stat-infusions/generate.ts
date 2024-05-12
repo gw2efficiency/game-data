@@ -1,7 +1,8 @@
-import * as path from 'path'
+import escapeRegex from 'escape-regex-string'
 import * as fs from 'fs'
 import fetch from 'node-fetch'
-import escapeRegex from 'escape-regex-string'
+import * as path from 'path'
+import { readCacheFile } from '../../../_helpers/cache'
 import { escapeQuotes } from '../../../_helpers/generate'
 
 interface ApiItem {
@@ -18,12 +19,11 @@ const REPLACE_REGEX = new RegExp(`${escapeRegex(START_MARKER)}(.*)${escapeRegex(
 async function run() {
   const file = fs.readFileSync(FILE_PATH, 'utf-8')
 
-  const response = await fetch('https://api.gw2efficiency.com/items?ids=all')
-  const json = await response.json()
+  const items = await readCacheFile<Array<ApiItem>>('items.json')
 
-  const filteredIds = json
-    .filter((item: ApiItem) => item.description && item.description.includes('infusion'))
-    .map((item: ApiItem) => item.id)
+  const filteredIds = items
+    .filter((item) => item.description && item.description.includes('infusion'))
+    .map((item) => item.id)
 
   let filteredItems = []
 
