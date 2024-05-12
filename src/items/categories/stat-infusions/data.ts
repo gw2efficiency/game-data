@@ -1,9 +1,9 @@
 export interface GameDataItemsCategoriesStatInfusions {
-    /** The item id */
-    id: number
+  /** The item id */
+  id: number
 
-    /** The item name */
-    name: string
+  /** The item name */
+  name: string
 }
 
 // prettier-ignore
