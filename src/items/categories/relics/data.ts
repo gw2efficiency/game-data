@@ -77,6 +77,12 @@ const GAME_DATA_ITEMS_CATEGORIES_RELICS: Array<GameDataItemsCategoriesRelic> = [
   { name: 'Relic of Nourys', exoticId: 101191, legendaryId: 101503 },
   { name: 'Relic of Karakosa', exoticId: 101268, legendaryId: 101546 },
   { name: 'Relic of Fireworks', exoticId: 100262, legendaryId: 101564 },
+  { name: 'Relic of the Founding', exoticId: 101737, legendaryId: 101776 },
+  { name: 'Relic of the Twin Generals', exoticId: 101767, legendaryId: 101731 },
+  { name: 'Relic of Mosyn', exoticId: 101801, legendaryId: 101860 },
+  { name: 'Relic of the Sorcerer', exoticId: 101863, legendaryId: 101908 },
+  { name: 'Relic of the Wayfinder', exoticId: 101943, legendaryId: 101917 },
+  { name: 'Relic of Zakiros', exoticId: 101955, legendaryId: 101944 },
   // -- GENERATE-END --
 ]
 
