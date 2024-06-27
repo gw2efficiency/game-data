@@ -26,6 +26,7 @@ const GAME_DATA_SKIFFS: Array<GameDataSkiff> = [
   { id: 529, name: 'Dynamics Racing Skiff', unlock_items: [99596] },
   { id: 539, name: 'Dreadnought Skiff', unlock_items: [99735] },
   { id: 573, name: 'Spellbound Skiff', unlock_items: [99942] },
+  { id: 649, name: 'Toymaker\'s Party Skiff', unlock_items: [101668] },
   // -- GENERATE-END --
 ]
 
