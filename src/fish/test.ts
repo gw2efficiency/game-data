@@ -9,13 +9,13 @@ it('does not have duplicated ids', () => {
   }
 })
 
-it('is not missing any timeOfDay data', () => {
+it('is not missing any time of day data', () => {
   const missingTimeOfDayInfo = data
     .filter((fish) => fish.timeOfDay.length === 0)
     .map((fish) => fish.id)
 
   if (missingTimeOfDayInfo.length > 0) {
-    throw new Error(`Missing timeOfDay data: ` + missingTimeOfDayInfo.join(', '))
+    throw new Error(`Missing time of day data: ` + missingTimeOfDayInfo.join(', '))
   }
 })
 
@@ -31,9 +31,14 @@ it('has valid achievement data', () => {
     .map((fish) => fish.id)
 
   if (missingValidAchievementData.length > 0) {
-    throw new Error(
-      `Has invalid achievement and/or avid achievement data: ` +
-        missingValidAchievementData.join(', ')
-    )
+    throw new Error(`Invalid achievement data: ` + missingValidAchievementData.join(', '))
+  }
+})
+
+it('has valid rarity data', () => {
+  const missingValidRarityData = data.filter((fish) => fish.rarity < 0).map((fish) => fish.id)
+
+  if (missingValidRarityData.length > 0) {
+    throw new Error(`Invalid rarity data: ` + missingValidRarityData.join(', '))
   }
 })

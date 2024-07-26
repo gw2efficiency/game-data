@@ -27,26 +27,20 @@ const EMPTY_DATA: GameDataFish = {
   favoredBait: '',
   timeOfDay: [],
   fishingPower: 0,
-  achievement: {
-    id: -1,
-    bit: -1,
-  },
-  avidAchievement: {
-    id: -1,
-    bit: -1,
-  },
+  achievement: { id: -1, bit: -1 },
+  avidAchievement: { id: -1, bit: -1 },
 }
 
+// Fish that are not in achievements but in wiki table
+const BLACKLISTED_IDS = [96494, 96899]
+
 async function run() {
-  let $: CheerioAPI
-  let generatedItems = ''
-  // Fish that are not in achievements but in wiki table
-  const blacklistedIds = [96494, 96899]
   const file = fs.readFileSync(FILE_PATH, 'utf-8')
   const items = await readCacheFile<Array<UApiItem>>('items.json')
+
   const response = await fetch('https://wiki.guildwars2.com/wiki/List_of_fish')
   const html = await response.text()
-  $ = load(html)
+  const $ = load(html)
 
   const table = load(
     `<table>${$('table.sortable.item.table[data-filter-id="fishtable1"]').html()}</table>`
@@ -54,7 +48,7 @@ async function run() {
 
   const rows = table('tr.filter-row')
   const fishItemsData = rows
-    .map((i, row) => {
+    .map((_, row) => {
       const fishItem = transformFish($, row)
       const matchingItem = items.find((item) => item.name === fishItem.name)
 
@@ -62,6 +56,7 @@ async function run() {
         console.error(`Could not find any items for '${fishItem.name}'`)
         process.exit(1)
       }
+
       return {
         ...fishItem,
         id: matchingItem.id,
@@ -70,34 +65,34 @@ async function run() {
     })
     .get()
 
-  generatedItems =
+  const generatedItems =
     fishItemsData
-      .filter((x) => !blacklistedIds.includes(x.id))
+      .filter((x) => !BLACKLISTED_IDS.includes(x.id))
       .map((x) => {
         const previousData = data.find((item) => item.id === x.id) || EMPTY_DATA
         const timeOfDay = x.timeOfDay.includes('Any') ? x.timeOfDay : previousData.timeOfDay
 
         return [
-          `  { `,
-          `id: ${x.id}, `,
-          `name: '${escapeQuotes(x.name)}', `,
-          `rarity: ${x.rarity}, `,
-          `location: '${escapeQuotes(x.location)}', `,
-          `timeOfDay: [${timeOfDay.map((item) => `'${item}'`).join(', ')}], `,
-          `openWater: ${x.openWater}, `,
-          `fishingHole: [${x.fishingHole.map((item) => `'${item}'`).join(', ')}], `,
-          `favoredBait: '${escapeQuotes(x.favoredBait)}', `,
-          `fishingPower: ${x.fishingPower}, `,
+          `  {`,
+          `id: ${x.id},`,
+          `name: '${escapeQuotes(x.name)}',`,
+          `rarity: ${x.rarity},`,
+          `location: '${escapeQuotes(x.location)}',`,
+          `timeOfDay: [${timeOfDay.map((item) => `'${item}'`).join(', ')}],`,
+          `openWater: ${x.openWater},`,
+          `fishingHole: [${x.fishingHole.map((item) => `'${item}'`).join(', ')}],`,
+          `favoredBait: '${escapeQuotes(x.favoredBait)}',`,
+          `fishingPower: ${x.fishingPower},`,
           `achievement: {`,
-          `id: ${x.achievement.id}, `,
+          `id: ${x.achievement.id},`,
           `bit: ${x.achievement.bit}`,
-          `}, `,
+          `},`,
           `avidAchievement: {`,
-          `id: ${x.avidAchievement.id}, `,
+          `id: ${x.avidAchievement.id},`,
           `bit: ${x.avidAchievement.bit}`,
           `}`,
-          ` }`,
-        ].join('')
+          `}`,
+        ].join(' ')
       })
       .join(',\n') + ','
 
@@ -110,14 +105,14 @@ run()
 // Parse and transform wiki fish data
 function transformFish($: CheerioAPI, row: Element) {
   const cells = $(row).find('td')
-  const openWater = $(cells[3]).text().trim().includes('Open Water')
+
   const achievement = getAchievementData($, cells[7]) || { id: -1, bit: -1 }
   const avidAchievement = getAchievementData($, cells[8]) || { id: -1, bit: -1 }
 
   return {
     name: $(cells[0]).text().trim(),
     location: $(cells[2]).text().trim(),
-    openWater: openWater,
+    openWater: $(cells[3]).text().trim().includes('Open Water'),
     fishingHole: $(cells[3])
       .text()
       .trim()
@@ -141,17 +136,12 @@ function transformFish($: CheerioAPI, row: Element) {
 // Get achievement data
 function getAchievementData($: CheerioAPI, element: Element) {
   const dataId = $(element).attr('data-id')
-
   if (!dataId) return null
 
   const [achievementId, achievementBit] = dataId.split('-bit')
   const id = parseInt(achievementId.replace('achievement', ''))
   const bit = parseInt(achievementBit)
-
   if (isNaN(id) || isNaN(bit)) return null
 
-  return {
-    id: id,
-    bit: bit,
-  }
+  return { id, bit }
 }
