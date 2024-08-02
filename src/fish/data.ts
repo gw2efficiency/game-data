@@ -18,10 +18,24 @@ export interface GameDataFish {
   fishingHole: Array<string>
 
   /** The fish's favored bait */
-  favoredBait: string
+  favoredBait:
+    | 'Any'
+    | 'Fish Egg'
+    | 'Freshwater Minnow'
+    | 'Glow Worm'
+    | 'Lava Beetle'
+    | 'Leech'
+    | 'Lightning Bug'
+    | 'Mackerel'
+    | 'Nightcrawler'
+    | 'Ramshorn Snail'
+    | 'Sardine'
+    | 'Scorpion'
+    | 'Shrimpling'
+    | 'Sparkfly Larva'
 
   /** The time of the day the fish can be caught in */
-  timeOfDay: Array<string>
+  timeOfDay: Array<'Any' | 'Day' | 'Night' | 'Dusk' | 'Dawn'>
 
   /** The fishing power required to catch the fish */
   fishingPower: number
@@ -194,7 +208,7 @@ const GAME_DATA_FISHES: Array<GameDataFish> = [
   { id: 97301, name: 'Lornar\'s Bass', rarity: 6, location: 'Shiverpeak Mountains', timeOfDay: ['Day'], openWater: false, fishingHole: ['Lake Fish'], favoredBait: 'Ramshorn Snail', fishingPower: 400, achievement: { id: 6179, bit: 12 }, avidAchievement: { id: 6153, bit: 12 } },
   { id: 96954, name: 'Snowflake Eel', rarity: 6, location: 'Shiverpeak Mountains', timeOfDay: ['Night'], openWater: false, fishingHole: ['Boreal Fish'], favoredBait: 'Ramshorn Snail', fishingPower: 450, achievement: { id: 6179, bit: 19 }, avidAchievement: { id: 6153, bit: 19 } },
   { id: 96882, name: 'Glacial Snakehead', rarity: 7, location: 'Shiverpeak Mountains', timeOfDay: ['Day'], openWater: false, fishingHole: ['Lake Fish'], favoredBait: 'Shrimpling', fishingPower: 400, achievement: { id: 6179, bit: 6 }, avidAchievement: { id: 6153, bit: 6 } },
-  { id: 95723, name: 'Alabaster Oscar', rarity: 7, location: 'Shiverpeak Mountains', timeOfDay: ['day'], openWater: false, fishingHole: ['Boreal Fish'], favoredBait: 'Ramshorn Snail', fishingPower: 450, achievement: { id: 6179, bit: 13 }, avidAchievement: { id: 6153, bit: 13 } },
+  { id: 95723, name: 'Alabaster Oscar', rarity: 7, location: 'Shiverpeak Mountains', timeOfDay: ['Day'], openWater: false, fishingHole: ['Boreal Fish'], favoredBait: 'Ramshorn Snail', fishingPower: 450, achievement: { id: 6179, bit: 13 }, avidAchievement: { id: 6153, bit: 13 } },
   { id: 97225, name: 'Halibut', rarity: 7, location: 'Shiverpeak Mountains', timeOfDay: ['Any'], openWater: false, fishingHole: ['Boreal Fish'], favoredBait: 'Shrimpling', fishingPower: 450, achievement: { id: 6179, bit: 20 }, avidAchievement: { id: 6153, bit: 20 } },
   { id: 96132, name: 'Dusky Grouper', rarity: 1, location: 'Ruins of Orr', timeOfDay: ['Dusk', 'Dawn'], openWater: true, fishingHole: ['None'], favoredBait: 'Any', fishingPower: 600, achievement: { id: 6363, bit: 0 }, avidAchievement: { id: 6227, bit: 0 } },
   { id: 95924, name: 'Ghostfish', rarity: 1, location: 'Ruins of Orr', timeOfDay: ['Night'], openWater: true, fishingHole: ['None'], favoredBait: 'Any', fishingPower: 600, achievement: { id: 6363, bit: 7 }, avidAchievement: { id: 6227, bit: 7 } },
