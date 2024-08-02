@@ -24,7 +24,7 @@ const EMPTY_DATA: GameDataFish = {
   location: '',
   openWater: false,
   fishingHole: [],
-  favoredBait: '',
+  favoredBait: '' as GameDataFish['favoredBait'],
   timeOfDay: [],
   fishingPower: 0,
   achievement: { id: -1, bit: -1 },
