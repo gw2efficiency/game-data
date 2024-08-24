@@ -83,6 +83,12 @@ const GAME_DATA_ITEMS_CATEGORIES_RELICS: Array<GameDataItemsCategoriesRelic> = [
   { name: 'Relic of the Sorcerer', exoticId: 101863, legendaryId: 101908 },
   { name: 'Relic of the Wayfinder', exoticId: 101943, legendaryId: 101917 },
   { name: 'Relic of Zakiros', exoticId: 101955, legendaryId: 101944 },
+  { name: 'Relic of the Blightbringer', exoticId: 102199, legendaryId: 102896 },
+  { name: 'Relic of Atrocity', exoticId: 102245, legendaryId: 102787 },
+  { name: 'Relic of the Stormsinger', exoticId: 102595, legendaryId: 103262 },
+  { name: 'Relic of Rivers', exoticId: 103015, legendaryId: 102442 },
+  { name: 'Relic of Sorrow', exoticId: 103424, legendaryId: 103507 },
+  { name: 'Relic of the Claw', exoticId: 103574, legendaryId: 102877 },
   // -- GENERATE-END --
 ]
 
