@@ -428,6 +428,7 @@ const GAME_DATA_MOUNT_SKINS: Array<GameDataMountSkin> = [
   { id: 648, name: 'Aurene\'s Prismatic Springer', unlock_items: [101604] },
   { id: 651, name: 'Enchanted Skimmer', unlock_items: [101828] },
   { id: 653, name: 'Wolf Griffon', unlock_items: [101940] },
+  { id: 698, name: 'Janthir Wilds Warclaw', unlock_items: [102512] },
   // -- GENERATE-END --
 ]
 

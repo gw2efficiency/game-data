@@ -373,6 +373,8 @@ const GAME_DATA_ITEMS_CATEGORIES_STAT_INFUSIONS: Array<GameDataItemsCategoriesSt
   { id: 100302, name: 'Possession Infusion' },
   { id: 100914, name: 'Possession Infusion' },
   { id: 100407, name: 'Possession Infusion' },
+  { id: 100913, name: 'Possession Infusion' },
+  { id: 102508, name: 'Heat Core Infusion' },
   // -- GENERATE-END --
 ]
 
