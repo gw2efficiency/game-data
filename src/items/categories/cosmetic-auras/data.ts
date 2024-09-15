@@ -359,6 +359,7 @@ const GAME_DATA_ITEMS_CATEGORIES_COSMETIC_AURAS: Array<GameDataItemsCategoriesCo
   { aura_key: 'jotunInfusion', id: 101276, name: 'Jotun Infusion' },
 
   { aura_key: 'possessionInfusion', id: 100008, name: 'Possession Infusion' },
+  { aura_key: 'possessionInfusion', id: 100065, name: 'Possession Infusion' },
   { aura_key: 'possessionInfusion', id: 100302, name: 'Possession Infusion' },
   { aura_key: 'possessionInfusion', id: 100407, name: 'Possession Infusion' },
   { aura_key: 'possessionInfusion', id: 100513, name: 'Possession Infusion' },
