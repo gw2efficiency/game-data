@@ -50,7 +50,9 @@ async function run() {
   const fishItemsData = rows
     .map((_, row) => {
       const fishItem = transformFish($, row)
-      const matchingItem = items.find((item) => item.name === fishItem.name && item.rarity === fishItem.rarity)
+      const matchingItem = items.find(
+        (item) => item.name === fishItem.name && item.rarity === fishItem.rarity
+      )
 
       if (!matchingItem) {
         console.error(`Could not find any items for '${fishItem.name}'`)
@@ -111,14 +113,14 @@ function transformFish($: CheerioAPI, row: Element) {
   const avidAchievement = getAchievementData($, cells[8]) || { id: -1, bit: -1 }
   const textRarity = $(cells[1]).find('b').text().trim() as keyof typeof rarityMapping
   enum rarityMapping {
-  Junk = 0,
-  Basic,
-  Fine,
-  Masterwork,
-  Rare,
-  Exotic,
-  Ascended,
-  Legendary,
+    Junk = 0,
+    Basic,
+    Fine,
+    Masterwork,
+    Rare,
+    Exotic,
+    Ascended,
+    Legendary,
   }
   const rarity = rarityMapping[textRarity]
 
