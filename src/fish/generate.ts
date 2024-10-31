@@ -50,7 +50,7 @@ async function run() {
   const fishItemsData = rows
     .map((_, row) => {
       const fishItem = transformFish($, row)
-      const matchingItem = items.find((item) => item.name === fishItem.name)
+      const matchingItem = items.find((item) => item.name === fishItem.name && item.rarity === fishItem.rarity)
 
       if (!matchingItem) {
         console.error(`Could not find any items for '${fishItem.name}'`)
@@ -71,13 +71,14 @@ async function run() {
       .map((x) => {
         const previousData = data.find((item) => item.id === x.id) || EMPTY_DATA
         const timeOfDay = x.timeOfDay.includes('Any') ? x.timeOfDay : previousData.timeOfDay
+        const location = x.location.includes('Janthir') ? previousData.location : x.location
 
         return [
           `  {`,
           `id: ${x.id},`,
           `name: '${escapeQuotes(x.name)}',`,
           `rarity: ${x.rarity},`,
-          `location: '${escapeQuotes(x.location)}',`,
+          `location: '${escapeQuotes(location)}',`,
           `timeOfDay: [${timeOfDay.map((item) => `'${item}'`).join(', ')}],`,
           `openWater: ${x.openWater},`,
           `fishingHole: [${x.fishingHole.map((item) => `'${item}'`).join(', ')}],`,
@@ -108,6 +109,18 @@ function transformFish($: CheerioAPI, row: Element) {
 
   const achievement = getAchievementData($, cells[7]) || { id: -1, bit: -1 }
   const avidAchievement = getAchievementData($, cells[8]) || { id: -1, bit: -1 }
+  const textRarity = $(cells[1]).find('b').text().trim() as keyof typeof rarityMapping
+  enum rarityMapping {
+  Junk = 0,
+  Basic,
+  Fine,
+  Masterwork,
+  Rare,
+  Exotic,
+  Ascended,
+  Legendary,
+  }
+  const rarity = rarityMapping[textRarity]
 
   return {
     name: $(cells[0]).text().trim(),
@@ -130,6 +143,7 @@ function transformFish($: CheerioAPI, row: Element) {
     fishingPower: parseInt($(cells[6]).text().trim()) || 0,
     achievement: achievement,
     avidAchievement: avidAchievement,
+    rarity: rarity,
   }
 }
 
