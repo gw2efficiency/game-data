@@ -26,7 +26,11 @@ const GAME_DATA_SKIFFS: Array<GameDataSkiff> = [
   { id: 529, name: 'Dynamics Racing Skiff', unlock_items: [99596] },
   { id: 539, name: 'Dreadnought Skiff', unlock_items: [99735] },
   { id: 573, name: 'Spellbound Skiff', unlock_items: [99942] },
+  { id: 601, name: 'Haunted Ghost Skiff', unlock_items: [101110] },
+  { id: 608, name: 'Alchemic Power Skiff', unlock_items: [101190] },
+  { id: 625, name: 'Queensdale Academic Skiff', unlock_items: [101389] },
   { id: 649, name: 'Toymaker\'s Party Skiff', unlock_items: [101668] },
+  { id: 655, name: 'Luxury Speeder', unlock_items: [101983] },
   // -- GENERATE-END --
 ]
 
