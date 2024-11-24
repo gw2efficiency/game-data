@@ -89,6 +89,12 @@ const GAME_DATA_ITEMS_CATEGORIES_RELICS: Array<GameDataItemsCategoriesRelic> = [
   { name: 'Relic of Rivers', exoticId: 103015, legendaryId: 102442 },
   { name: 'Relic of Sorrow', exoticId: 103424, legendaryId: 103507 },
   { name: 'Relic of the Claw', exoticId: 103574, legendaryId: 102877 },
+  { name: 'Relic of Geysers', exoticId: 103763, legendaryId: 103829 },
+  { name: 'Relic of the Beehive', exoticId: 103977, legendaryId: 103923 },
+  { name: 'Relic of Reunification', exoticId: 103984, legendaryId: 103924 },
+  { name: 'Relic of the Steamshrieker', exoticId: 104022, legendaryId: 103811 },
+  { name: 'Relic of Mount Balrior', exoticId: 103872, legendaryId: 104035 },
+  { name: 'Relic of the Mists Tide', exoticId: 103901, legendaryId: 103941 },
   // -- GENERATE-END --
 ]
 
