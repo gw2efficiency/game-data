@@ -25,6 +25,7 @@ const GAME_DATA_TITLES_CATEGORIES_COLORED_TITLES: Array<GameDataTitlesCategories
   { id: 450, name: '<c=#c7815d>Ultimate Dominator VI</c>', achievements: [7906] },
   { id: 456, name: '<c=#A594F7>Legendary Conqueror of Cerus</c>', achievements: [7873] },
   { id: 469, name: '<c=#ccbb66>Eternal Forgemaster</c>', achievements: [8093] },
+  { id: 528, name: '<c=#d9578d>Champion of Champions</c>', achievements: [8151] },
   // -- GENERATE-END --
 ]
 
