@@ -43,7 +43,7 @@ const GAME_DATA_HOME_NODES: Array<GameDataHomeNode> = [
   { id: 'flaxseed_node', name: 'Flaxseed Harvesting Node', unlock_items: [79063] },
   { id: 'garden_plot_01', name: 'Black Lion Garden Plot Deed', unlock_items: [86786] },
   { id: 'garden_plot_02', name: 'Black Lion Garden Plot Deed', unlock_items: [86786] },
-  { id: 'garden_plot_03', name: 'Black Lion Garden Plot Deed', unlock_items: [86786] },
+  { id: 'garden_plot_03', name: 'Black Lion Garden Plot Deed', unlock_items: [91777] },
   { id: 'ghost_pepper_node', name: 'Ghost Pepper Harvesting Node', unlock_items: [68093] },
   { id: 'hard_wood_node', name: 'Hard Wood Logging Node', unlock_items: [79085] },
   { id: 'iron_ore_node', name: 'Iron Ore Mining Node', unlock_items: [79260] },

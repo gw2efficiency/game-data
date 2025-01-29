@@ -1,1 +1,0 @@
-- `garden_plot_03` is currently using `86786` (Black Lion Garden Plot Deed) as it's unlock id, when `91777` (Garden Plot Deed, from the Gourmet Training achievement) would be the correct one. The correct one does not have an item in the API currently.
