@@ -31,6 +31,7 @@ async function run() {
           `id: '${node.id}', `,
           `name: '${escapeQuotes(previousData.name)}', `,
           `unlock_items: ${JSON.stringify(previousData.unlock_items).replace(',', ', ')}`,
+          previousData.gathered_items ? `, gathered_items: ${JSON.stringify(previousData.gathered_items).replaceAll(',', ', ')}` : '',
           ` }`,
         ].join('')
       })
