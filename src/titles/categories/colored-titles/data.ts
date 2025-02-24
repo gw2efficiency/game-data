@@ -15,6 +15,7 @@ const GAME_DATA_TITLES_CATEGORIES_COLORED_TITLES: Array<GameDataTitlesCategories
   { id: 89, name: '<c=#d9578d>Champion Brawler</c>', achievements: [265] },
   { id: 348, name: '<c=#26c2eb>The Extra Life</c>', achievements: [5000] },
   { id: 404, name: '<c=#ccbb66>I\'m rich, you know.</c>', achievements: [6963] },
+  { id: 421, name: '<c=#c7815d>Ultimate Dominator X</c>', achievements: [7885] },
   { id: 435, name: '<c=#c7815d>Ultimate Dominator VII</c>', achievements: [7924] },
   { id: 436, name: '<c=#c7815d>Ultimate Dominator V</c>', achievements: [7870] },
   { id: 439, name: '<c=#c7815d>Ultimate Dominator IV</c>', achievements: [7932] },
