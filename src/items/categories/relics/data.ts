@@ -95,6 +95,18 @@ const GAME_DATA_ITEMS_CATEGORIES_RELICS: Array<GameDataItemsCategoriesRelic> = [
   { name: 'Relic of the Steamshrieker', exoticId: 104022, legendaryId: 103811 },
   { name: 'Relic of Mount Balrior', exoticId: 103872, legendaryId: 104035 },
   { name: 'Relic of the Mists Tide', exoticId: 103901, legendaryId: 103941 },
+  { name: 'Relic of Surging', exoticId: 100063, legendaryId: 104274 },
+  { name: 'Relic of the Lich', exoticId: 100238, legendaryId: 104277 },
+  { name: 'Relic of the Ogre', exoticId: 100311, legendaryId: 104334 },
+  { name: 'Relic of the Golemancer', exoticId: 100403, legendaryId: 104416 },
+  { name: 'Relic of the Earth', exoticId: 100435, legendaryId: 104383 },
+  { name: 'Relic of the Privateer', exoticId: 100479, legendaryId: 104311 },
+  { name: 'Relic of Vampirism', exoticId: 100676, legendaryId: 104249 },
+  { name: 'Relic of the Holosmith', exoticId: 100908, legendaryId: 104390 },
+  { name: 'Relic of the Eagle', exoticId: 104241, legendaryId: 104413 },
+  { name: 'Relic of Thorns', exoticId: 104424, legendaryId: 104296 },
+  { name: 'Relic of Fire', exoticId: 104501, legendaryId: 104308 },
+  { name: 'Relic of Altruism', exoticId: 104256, legendaryId: 104491 },
   // -- GENERATE-END --
 ]
 

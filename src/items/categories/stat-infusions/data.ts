@@ -376,6 +376,15 @@ const GAME_DATA_ITEMS_CATEGORIES_STAT_INFUSIONS: Array<GameDataItemsCategoriesSt
   { id: 100913, name: 'Possession Infusion' },
   { id: 102508, name: 'Heat Core Infusion' },
   { id: 100065, name: 'Possession Infusion' },
+  { id: 104357, name: 'Bloodstone Infusion' },
+  { id: 104386, name: 'Bloodstone Infusion' },
+  { id: 104435, name: 'Forest Wisp Infusion' },
+  { id: 104456, name: 'Bloodstone Infusion' },
+  { id: 104472, name: 'Bloodstone Infusion' },
+  { id: 104481, name: 'Bloodstone Infusion' },
+  { id: 104349, name: 'Bloodstone Infusion' },
+  { id: 104340, name: 'Bloodstone Infusion' },
+  { id: 104566, name: 'Chatoyant Infusion' },
   // -- GENERATE-END --
 ]
 
