@@ -385,6 +385,7 @@ const GAME_DATA_ITEMS_CATEGORIES_STAT_INFUSIONS: Array<GameDataItemsCategoriesSt
   { id: 104349, name: 'Bloodstone Infusion' },
   { id: 104340, name: 'Bloodstone Infusion' },
   { id: 104566, name: 'Chatoyant Infusion' },
+  { id: 104348, name: 'Bloodstone Infusion' },
   // -- GENERATE-END --
 ]
 
