@@ -27,6 +27,16 @@ const GAME_DATA_TITLES_CATEGORIES_COLORED_TITLES: Array<GameDataTitlesCategories
   { id: 456, name: '<c=#A594F7>Legendary Conqueror of Cerus</c>', achievements: [7873] },
   { id: 469, name: '<c=#ccbb66>Eternal Forgemaster</c>', achievements: [8093] },
   { id: 528, name: '<c=#d9578d>Champion of Champions</c>', achievements: [8151] },
+  { id: 537, name: '<c=#d9578d>Champion of Champions X</c>', achievements: [8404] },
+  { id: 538, name: '<c=#d9578d>Champion of Champions VI</c>', achievements: [8409] },
+  { id: 539, name: '<c=#d9578d>Champion of Champions V</c>', achievements: [8371] },
+  { id: 540, name: '<c=#d9578d>Champion of Champions IX</c>', achievements: [8429] },
+  { id: 541, name: '<c=#d9578d>Champion of Champions II</c>', achievements: [8430] },
+  { id: 542, name: '<c=#d9578d>Champion of Champions IV</c>', achievements: [8399] },
+  { id: 544, name: '<c=#d9578d>Champion of Champions VII</c>', achievements: [8386] },
+  { id: 545, name: '<c=#d9578d>Champion of Champions III</c>', achievements: [8410] },
+  { id: 547, name: '<c=#d9578d>Champion of Champions VIII</c>', achievements: [8432] },
+  { id: 574, name: '<c=#A594F7>Legendary Conqueror of Ura</c>', achievements: [8587] },
   // -- GENERATE-END --
 ]
 
