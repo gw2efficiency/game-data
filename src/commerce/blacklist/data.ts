@@ -457,6 +457,8 @@ const GAME_DATA_COMMERCE_BLACKLIST: Array<GameDataCommerceBlacklistItem> = [
   { id: 94400, name: 'Draped Wintersday Garland' },
   { id: 94445, name: 'Embellished Wintersday Star' },
   { id: 94648, name: 'Ox Statue' },
+  { id: 79575, name: 'Large Male Norn Holo-Dancer' },
+  { id: 79557, name: 'Large Female Norn Holo-Dancer' },
 
   // Guild blueprints
   { id: 70532, name: 'Guild Flame Ram Blueprint' },
