@@ -18,6 +18,8 @@ export const AURA_ITEM_NAMES: Array<AuraItemName> = [
   { auraKey: 'jormagEyeInfusions', match: /^Jormag (Left|Right) Eye Infusion$/ },
   { auraKey: 'primordusEyeInfusions', match: /^Primordus (Left|Right) Eye Infusion$/ },
   { auraKey: 'wurmsBlessingEnrichment', match: /^Wurm's .* Blessing Enrichment$/ },
+  { auraKey: 'forestWispInfusion', match: /^Forest Wisp Infusion$/ },
+  { auraKey: 'heatCoreInfusion', match: /^Heat Core Infusion$/ },
 
   // Events
   { auraKey: 'preservedQueenBees', match: /^(Preserved Queen Bee|Queen Bee Infusion)$/ },
@@ -28,6 +30,7 @@ export const AURA_ITEM_NAMES: Array<AuraItemName> = [
   { auraKey: 'heartOfTheKhanUr', match: /^Heart of the Khan-Ur$/ },
   { auraKey: 'deldrimorStoneskinInfusions', match: /^Deldrimor Stoneskin Infusion$/ },
   { auraKey: 'echoOfTheDragonvoid', match: /^Echo of the Dragonvoid$/ },
+  { auraKey: 'bloodstoneInfusion', match: /^Bloodstone Infusion$/ },
 
   // Fractals of the Mists
   { auraKey: 'celestialInfusionBlue', match: /^Celestial Infusion \(Blue\)$/ },
