@@ -68,6 +68,10 @@ const GAME_DATA_ITEMS_CATEGORIES_COSMETIC_AURAS: Array<GameDataItemsCategoriesCo
   { aura_key: 'wurmsBlessingEnrichment', id: 101272, name: 'Wurm\'s Gilded Blessing Enrichment' },
   { aura_key: 'wurmsBlessingEnrichment', id: 101302, name: 'Wurm\'s Magical Blessing Enrichment' },
 
+  { aura_key: 'forestWispInfusion', id: 104435, name: 'Forest Wisp Infusion' },
+
+  { aura_key: 'heatCoreInfusion', id: 102508, name: 'Heat Core Infusion' },
+
   { aura_key: 'preservedQueenBees', id: 68440, name: 'Preserved Queen Bee' },
   { aura_key: 'preservedQueenBees', id: 77594, name: 'Preserved Queen Bee' },
   { aura_key: 'preservedQueenBees', id: 81638, name: 'Queen Bee Infusion' },
@@ -143,6 +147,15 @@ const GAME_DATA_ITEMS_CATEGORIES_COSMETIC_AURAS: Array<GameDataItemsCategoriesCo
   { aura_key: 'echoOfTheDragonvoid', id: 98028, name: 'Echo of the Dragonvoid' },
   { aura_key: 'echoOfTheDragonvoid', id: 98043, name: 'Echo of the Dragonvoid' },
   { aura_key: 'echoOfTheDragonvoid', id: 98066, name: 'Echo of the Dragonvoid' },
+
+  { aura_key: 'bloodstoneInfusion', id: 104340, name: 'Bloodstone Infusion' },
+  { aura_key: 'bloodstoneInfusion', id: 104348, name: 'Bloodstone Infusion' },
+  { aura_key: 'bloodstoneInfusion', id: 104349, name: 'Bloodstone Infusion' },
+  { aura_key: 'bloodstoneInfusion', id: 104357, name: 'Bloodstone Infusion' },
+  { aura_key: 'bloodstoneInfusion', id: 104386, name: 'Bloodstone Infusion' },
+  { aura_key: 'bloodstoneInfusion', id: 104456, name: 'Bloodstone Infusion' },
+  { aura_key: 'bloodstoneInfusion', id: 104472, name: 'Bloodstone Infusion' },
+  { aura_key: 'bloodstoneInfusion', id: 104481, name: 'Bloodstone Infusion' },
 
   { aura_key: 'celestialInfusionBlue', id: 81761, name: 'Celestial Infusion (Blue)' },
   { aura_key: 'celestialInfusionBlue', id: 81779, name: 'Celestial Infusion (Blue)' },
