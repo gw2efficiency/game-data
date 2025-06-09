@@ -107,6 +107,14 @@ const GAME_DATA_ITEMS_CATEGORIES_RELICS: Array<GameDataItemsCategoriesRelic> = [
   { name: 'Relic of Thorns', exoticId: 104424, legendaryId: 104296 },
   { name: 'Relic of Fire', exoticId: 104501, legendaryId: 104308 },
   { name: 'Relic of Altruism', exoticId: 104256, legendaryId: 104491 },
+  { name: 'Relic of the Phenom', exoticId: 104733, legendaryId: 104990 },
+  { name: 'Relic of Bloodstone', exoticId: 104800, legendaryId: 104976 },
+  { name: 'Relic of Bava Nisos', exoticId: 104848, legendaryId: 104974 },
+  { name: 'Relic of Agony', exoticId: 104849, legendaryId: 104948 },
+  { name: 'Relic of the Living City', exoticId: 104938, legendaryId: 104922 },
+  { name: 'Relic of Mistburn', exoticId: 104994, legendaryId: 104709 },
+  { name: 'Relic of the Water', exoticId: 100531, legendaryId: 101474 },
+  { name: 'Relic of the Thief', exoticId: 100976, legendaryId: 101580 },
   // -- GENERATE-END --
 ]
 
