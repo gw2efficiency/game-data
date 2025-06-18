@@ -7,6 +7,7 @@ import path from 'path'
 import { escapeQuotes } from '../_helpers/generate'
 import escapeRegex from 'escape-regex-string'
 import pLimit from 'p-limit'
+import { GameDataFish } from './data'
 
 const BASE_API_URL = 'https://wiki.guildwars2.com/api.php?'
 
@@ -64,6 +65,7 @@ interface UApiAchievementBit {
 
 type FishDataAchievement = {
   id: number
+  name: string
   bit: number
 }
 
@@ -81,8 +83,6 @@ type _FishData = {
   achievement: FishDataAchievement
   avidAchievement: FishDataAchievement
 }
-
-type FishData = Omit<_FishData, 'locationString'>
 
 const fishingAchievementIds = [
   8554,
@@ -189,6 +189,7 @@ async function run() {
           `id: ${fish.id},`,
           `name: '${escapeQuotes(fish.name)}',`,
           `rarity: ${fish.rarity},`,
+          `location: '${escapeQuotes(fish.location)}',`,
           `timeOfDay: [${fish.timeOfDay.map((time) => `'${time}'`).join(', ')}],`,
           `openWater: ${fish.openWater},`,
           `fishingHole: [${fish.fishingHole.map((hole) => `'${hole}'`).join(', ')}],`,
@@ -196,10 +197,12 @@ async function run() {
           `fishingPower: ${fish.fishingPower},`,
           `achievement: {`,
           `id: ${fish.achievement.id},`,
+          `name: '${escapeQuotes(fish.achievement.name)}',`,
           `bit: ${fish.achievement.bit}`,
           `},`,
           `avidAchievement: {`,
           `id: ${fish.avidAchievement.id},`,
+          `name: '${escapeQuotes(fish.achievement.name)}',`,
           `bit: ${fish.avidAchievement.bit}`,
           `}`,
           `}`,
@@ -279,9 +282,10 @@ function transformFishEntry(fish: SMWResult, achievements: UApiAchievement[]) {
     fishingHole,
     favoredBait,
     fishingPower: 0,
-    achievement: { id: achievement.id, bit: achievementBit },
+    achievement: { id: achievement.id, name: achievement.name, bit: achievementBit },
     avidAchievement: {
       id: avidAchievement ? avidAchievement.id : -1,
+      name: avidAchievement ? avidAchievement.name : '',
       bit: avidAchievementBit,
     },
   }
@@ -465,10 +469,9 @@ async function fetchAllFishingPowerMaps(fishingHoles: string[]) {
 async function enrichFishWithFishingPower(
   fishList: Array<_FishData>,
   uniqueFishingHoles: Array<string>
-): Promise<Array<FishData>> {
+): Promise<Array<GameDataFish>> {
   const fishingPowerMap = await fetchAllFishingPowerMaps(uniqueFishingHoles)
 
-  // Need individual zone names for Elona
   const elonaRegions = [
     'Crystal Desert',
     'Crystal Oasis',
@@ -483,21 +486,24 @@ async function enrichFishWithFishingPower(
     'Dragonfall',
   ].map((region) => region.toLowerCase())
 
-  for (const fish of fishList) {
-    const locationString = fish.locationString || ''
+  const enrichedFish = fishList.map((fish) => {
+    const fishCopy = { ...fish } as any
+
+    const locationString = fishCopy.locationString || ''
+    fishCopy.location = fishCopy.locationString
+      .replace(/\[\[([^\]|]+)(?:\|[^\]]+)?]]/g, '$1')
+      .replace(/\[\[|\]\]/g, '')
     const matches = [...locationString.matchAll(/\[\[([^\]|]+)(?:\|[^\]]+)?]]/g)]
     const locations = matches.length
       ? matches.flatMap((m) => (/elona/i.test(m[1]) ? elonaRegions : [m[1].trim().toLowerCase()]))
       : []
-    const holes = fish.fishingHole
+    const holes = [...fishCopy.fishingHole]
 
-    // If fishing hole is None and openWater is false, it is probably saltwater/brackish/freshwater
-    if (fish.fishingHole.includes('None') && !fish.openWater) {
+    if (holes.includes('None') && !fishCopy.openWater) {
       const prefix = '[[Fishing Hole]]: '
-      const afterPrefix = fish.fishingHoleString.slice(prefix.length).trim()
-      const fixedFishingHole = []
-
-      const location = locations[0]?.toLowerCase().split(' ')[0] || ''
+      const afterPrefix = fishCopy.fishingHoleString.slice(prefix.length).trim()
+      const location = locations[0]?.split(' ')[0].toLowerCase() || ''
+      const fixedFishingHole: string[] = []
       const afterPrefixLower = afterPrefix.toLowerCase()
 
       const matchesKeywords = (hole: string, keywords: string[]) => {
@@ -515,25 +521,21 @@ async function enrichFishWithFishingPower(
           )
         )
       }
-
       if (afterPrefixLower.includes('brackish')) {
         fixedFishingHole.push(
           ...uniqueFishingHoles.filter((hole) => matchesKeywords(hole, ['brackish']))
         )
       }
-
       if (afterPrefixLower.includes('freshwater')) {
         fixedFishingHole.push(
           ...uniqueFishingHoles.filter((hole) => matchesKeywords(hole, ['freshwater']))
         )
       }
 
-      // If we could fix it, return fixed version otherwise return original
-      fish.fishingHole = fixedFishingHole.length ? fixedFishingHole : fish.fishingHole
+      fishCopy.fishingHole = fixedFishingHole.length ? fixedFishingHole : holes
     }
 
-    // Default power from Open Water or default to 0
-    const defaultPower = fish.openWater
+    const defaultPower = fishCopy.openWater
       ? (() => {
           const powers = locations
             .map(
@@ -545,26 +547,24 @@ async function enrichFishWithFishingPower(
         })()
       : 0
 
-    // If 'None' in holes, fishingPower is the default power
     if (holes.some((hole: string) => hole.toLowerCase() === 'none')) {
-      fish.fishingPower = defaultPower
-      delete fish.locationString
-      continue
+      return {
+        ...fishCopy,
+        fishingPower: defaultPower,
+      } as GameDataFish
     }
 
-    // If only 'Any' in holes, fishingPower is the default power
     if (holes.length === 1 && holes[0].toLowerCase() === 'any') {
-      fish.fishingPower = defaultPower
-      delete fish.locationString
-      continue
+      return {
+        ...fishCopy,
+        fishingPower: defaultPower,
+      } as GameDataFish
     }
 
-    // Throw error if no valid locations because at this point we need them
     if (!locations.length) {
-      throw new Error(`No valid [[location]] found for fish ${fish.name}`)
+      throw new Error(`No valid [[location]] found for fish ${fishCopy.name}`)
     }
 
-    // Filter out 'Any' and find lowest power from fishingHole-location combos
     const filteredHoles = holes.filter((hole: string) => hole.toLowerCase() !== 'any')
     const powers = filteredHoles.flatMap((hole: string) =>
       locations
@@ -572,14 +572,16 @@ async function enrichFishWithFishingPower(
         .filter((power) => power != null)
     )
 
-    if (powers.length) {
-      fish.fishingPower = Math.min(...powers)
-    }
+    const fishingPower = powers.length ? Math.min(...powers) : defaultPower
 
-    delete fish.locationString
-  }
+    return {
+      ...fishCopy,
+      fishingPower,
+    } as GameDataFish
+  })
 
-  return fishList
+  console.log(enrichedFish)
+  return enrichedFish
 }
 
 run()
