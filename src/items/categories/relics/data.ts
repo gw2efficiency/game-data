@@ -115,6 +115,7 @@ const GAME_DATA_ITEMS_CATEGORIES_RELICS: Array<GameDataItemsCategoriesRelic> = [
   { name: 'Relic of Mistburn', exoticId: 104994, legendaryId: 104709 },
   { name: 'Relic of the Water', exoticId: 100531, legendaryId: 101474 },
   { name: 'Relic of the Thief', exoticId: 100976, legendaryId: 101580 },
+  { name: 'Relic of the Living City', exoticId: 104928, legendaryId: 104922 },
   // -- GENERATE-END --
 ]
 

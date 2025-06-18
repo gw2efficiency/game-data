@@ -36,7 +36,7 @@ const GAME_DATA_TITLES_CATEGORIES_COLORED_TITLES: Array<GameDataTitlesCategories
   { id: 544, name: '<c=#d9578d>Champion of Champions VII</c>', achievements: [8386] },
   { id: 545, name: '<c=#d9578d>Champion of Champions III</c>', achievements: [8410] },
   { id: 547, name: '<c=#d9578d>Champion of Champions VIII</c>', achievements: [8432] },
-  { id: 574, name: '<c=#A594F7>Legendary Conqueror of Ura</c>', achievements: [8587] },
+  { id: 591, name: '<c=#A594F7>Legendary Conqueror of Ura</c>', achievements: [8587] },
   // -- GENERATE-END --
 ]
 
