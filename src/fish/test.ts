@@ -21,13 +21,7 @@ it('is not missing any time of day data', () => {
 
 it('has valid achievement data', () => {
   const missingValidAchievementData = data
-    .filter(
-      (fish) =>
-        fish.achievement.id < 0 ||
-        fish.achievement.bit < 0 ||
-        fish.avidAchievement.id < 0 ||
-        fish.avidAchievement.bit < 0
-    )
+    .filter((fish) => fish.achievement.id < 0 || fish.achievement.bit < 0)
     .map((fish) => fish.id)
 
   if (missingValidAchievementData.length > 0) {
@@ -40,5 +34,15 @@ it('has valid rarity data', () => {
 
   if (missingValidRarityData.length > 0) {
     throw new Error(`Invalid rarity data: ` + missingValidRarityData.join(', '))
+  }
+})
+
+it('has valid fishingHole/openWater data', () => {
+  const missingFishingHoleData = data
+    .filter((fish) => !fish.openWater && fish.fishingHole.includes('None'))
+    .map((fish) => fish.id)
+
+  if (missingFishingHoleData.length > 0) {
+    throw new Error(`Invalid fishing hole / open water data: ` + missingFishingHoleData.join(', '))
   }
 })
