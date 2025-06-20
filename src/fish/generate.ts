@@ -75,9 +75,9 @@ type _FishData = {
   rarity: 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7
   locationString?: string
   fishingHoleString: string
-  timeOfDay: string[]
+  timeOfDay: Array<string>
   openWater: boolean
-  fishingHole: string[]
+  fishingHole: Array<string>
   favoredBait: string
   fishingPower: number
   achievement: FishDataAchievement
@@ -217,7 +217,7 @@ async function run() {
 
 async function fetchFishEntries(ids: Array<number>) {
   const limit = pLimit(10)
-  const results: SMWResult[] = []
+  const results: Array<SMWResult> = []
 
   const tasks = ids.map((id, i) =>
     limit(async () => {
@@ -237,7 +237,7 @@ async function fetchFishEntries(ids: Array<number>) {
   return results
 }
 
-function transformFishEntry(fish: SMWResult, achievements: UApiAchievement[]) {
+function transformFishEntry(fish: SMWResult, achievements: Array<UApiAchievement>) {
   const id = fish.printouts['Has game id'][0]
   const name = fish.printouts['Has canonical name'][0]
   const rarityString = fish.printouts['Has item rarity'][0]
@@ -291,7 +291,7 @@ function transformFishEntry(fish: SMWResult, achievements: UApiAchievement[]) {
   }
 }
 
-async function queryApi(query: string, offset = 0): Promise<SMWResult[]> {
+async function queryApi(query: string, offset = 0): Promise<Array<SMWResult>> {
   const parameters = {
     action: 'ask',
     format: 'json',
@@ -302,7 +302,7 @@ async function queryApi(query: string, offset = 0): Promise<SMWResult[]> {
   const response = await fetch(url)
   const json = await response.json()
 
-  const results: SMWResult[] = Object.values(json.query?.results || {})
+  const results: Array<SMWResult> = Object.values(json.query?.results || {})
 
   if (json['query-continue-offset']) {
     const more = await queryApi(query, json['query-continue-offset'])
@@ -455,7 +455,7 @@ async function fetchFishingPowerMap(fishingHole: string): Promise<Record<string,
   return map
 }
 
-async function fetchAllFishingPowerMaps(fishingHoles: string[]) {
+async function fetchAllFishingPowerMaps(fishingHoles: Array<string>) {
   const combinedMap: Record<string, number> = {}
 
   for (const hole of fishingHoles) {
@@ -503,10 +503,10 @@ async function enrichFishWithFishingPower(
       const prefix = '[[Fishing Hole]]: '
       const afterPrefix = fishCopy.fishingHoleString.slice(prefix.length).trim()
       const location = locations[0]?.split(' ')[0].toLowerCase() || ''
-      const fixedFishingHole: string[] = []
+      const fixedFishingHole: Array<string> = []
       const afterPrefixLower = afterPrefix.toLowerCase()
 
-      const matchesKeywords = (hole: string, keywords: string[]) => {
+      const matchesKeywords = (hole: string, keywords: Array<string>) => {
         const holeLower = hole.toLowerCase()
         return (
           (location === '' || holeLower.includes(location)) &&
