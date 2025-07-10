@@ -182,7 +182,9 @@ async function run() {
   const fishData = await enrichFishWithFishingPower(_fishData, uniqueFishingHoles)
 
   const generatedItems =
+    // Sort to keep the list stable between generations
     fishData
+      .sort((a, b) => a.id - b.id)
       .map((fish) => {
         return [
           `  {`,
@@ -580,7 +582,6 @@ async function enrichFishWithFishingPower(
     } as GameDataFish
   })
 
-  console.log(enrichedFish)
   return enrichedFish
 }
 
