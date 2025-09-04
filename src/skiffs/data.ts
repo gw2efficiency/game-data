@@ -31,6 +31,8 @@ const GAME_DATA_SKIFFS: Array<GameDataSkiff> = [
   { id: 625, name: 'Queensdale Academic Skiff', unlock_items: [101389] },
   { id: 649, name: 'Toymaker\'s Party Skiff', unlock_items: [101668] },
   { id: 655, name: 'Luxury Speeder', unlock_items: [101983] },
+  { id: 707, name: 'Star Blessed Skiff', unlock_items: [103824] },
+  { id: 748, name: 'The Ferryman\'s Skiff', unlock_items: [104788] },
   // -- GENERATE-END --
 ]
 
