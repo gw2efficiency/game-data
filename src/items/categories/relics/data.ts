@@ -116,6 +116,12 @@ const GAME_DATA_ITEMS_CATEGORIES_RELICS: Array<GameDataItemsCategoriesRelic> = [
   { name: 'Relic of the Water', exoticId: 100531, legendaryId: 101474 },
   { name: 'Relic of the Thief', exoticId: 100976, legendaryId: 101580 },
   { name: 'Relic of the Living City', exoticId: 104928, legendaryId: 104922 },
+  { name: 'Relic of the First Revenant', exoticId: 105585, legendaryId: 106081 },
+  { name: 'Relic of Castora', exoticId: 105652, legendaryId: 105877 },
+  { name: 'Relic of the Mist Stranger', exoticId: 106206, legendaryId: 105420 },
+  { name: 'Relic of the Pirate Queen', exoticId: 106221, legendaryId: 106637 },
+  { name: 'Relic of the Scoundrel', exoticId: 106355, legendaryId: 106650 },
+  { name: 'Relic of the Biomancer', exoticId: 106364, legendaryId: 106098 },
   // -- GENERATE-END --
 ]
 
