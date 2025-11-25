@@ -31,6 +31,7 @@ export const AURA_ITEM_NAMES: Array<AuraItemName> = [
   { auraKey: 'deldrimorStoneskinInfusions', match: /^Deldrimor Stoneskin Infusion$/ },
   { auraKey: 'echoOfTheDragonvoid', match: /^Echo of the Dragonvoid$/ },
   { auraKey: 'bloodstoneInfusion', match: /^Bloodstone Infusion$/ },
+  { auraKey: 'chromaticBubbles', match: /^Chromatic Bubbles$/ },
 
   // Fractals of the Mists
   { auraKey: 'celestialInfusionBlue', match: /^Celestial Infusion \(Blue\)$/ },
@@ -73,6 +74,12 @@ export const AURA_ITEM_NAMES: Array<AuraItemName> = [
 
   // World versus World
   { auraKey: 'mistwalkerInfusion', match: /^Mistwalker Infusion$/ },
+
+  // Incursive Investigation
+  { auraKey: 'agonyLens', match: /(Agony Lens \(Left\)|Agony Lens \(Right\))/ },
+
+  // Fishing
+  { auraKey: 'etherealSeaLifeInfusion', match: /^Ethereal Sea-Life Infusion$/ },
 ]
 
 interface UApiItem {

@@ -117,8 +117,9 @@ const fishingAchievementIds = [
   6393,
   6471,
   6110,
-  6471,
   6224,
+  8900,
+  8973,
 ]
 
 const BLACKLISTED_IDS = [96494, 96899]
