@@ -157,6 +157,15 @@ const GAME_DATA_ITEMS_CATEGORIES_COSMETIC_AURAS: Array<GameDataItemsCategoriesCo
   { aura_key: 'bloodstoneInfusion', id: 104472, name: 'Bloodstone Infusion' },
   { aura_key: 'bloodstoneInfusion', id: 104481, name: 'Bloodstone Infusion' },
 
+  { aura_key: 'chromaticBubbles', id: 105717, name: 'Chromatic Bubbles' },
+  { aura_key: 'chromaticBubbles', id: 105736, name: 'Chromatic Bubbles' },
+  { aura_key: 'chromaticBubbles', id: 105924, name: 'Chromatic Bubbles' },
+  { aura_key: 'chromaticBubbles', id: 106128, name: 'Chromatic Bubbles' },
+  { aura_key: 'chromaticBubbles', id: 106173, name: 'Chromatic Bubbles' },
+  { aura_key: 'chromaticBubbles', id: 106278, name: 'Chromatic Bubbles' },
+  { aura_key: 'chromaticBubbles', id: 106399, name: 'Chromatic Bubbles' },
+  { aura_key: 'chromaticBubbles', id: 106471, name: 'Chromatic Bubbles' },
+
   { aura_key: 'celestialInfusionBlue', id: 81761, name: 'Celestial Infusion (Blue)' },
   { aura_key: 'celestialInfusionBlue', id: 81779, name: 'Celestial Infusion (Blue)' },
   { aura_key: 'celestialInfusionBlue', id: 81811, name: 'Celestial Infusion (Blue)' },
@@ -406,6 +415,29 @@ const GAME_DATA_ITEMS_CATEGORIES_COSMETIC_AURAS: Array<GameDataItemsCategoriesCo
   { aura_key: 'mistwalkerInfusion', id: 99839, name: 'Mistwalker Infusion' },
   { aura_key: 'mistwalkerInfusion', id: 99848, name: 'Mistwalker Infusion' },
   { aura_key: 'mistwalkerInfusion', id: 99850, name: 'Mistwalker Infusion' },
+
+  { aura_key: 'agonyLens', id: 105168, name: 'Vanishing Agony Lens (Right)' },
+  { aura_key: 'agonyLens', id: 105201, name: 'Amber Agony Lens (Left)' },
+  { aura_key: 'agonyLens', id: 105202, name: 'Aureate Agony Lens (Right)' },
+  { aura_key: 'agonyLens', id: 105207, name: 'Vanishing Agony Lens (Left)' },
+  { aura_key: 'agonyLens', id: 105208, name: 'Crimson Agony Lens (Left)' },
+  { aura_key: 'agonyLens', id: 105211, name: 'Crimson Agony Lens (Right)' },
+  { aura_key: 'agonyLens', id: 105214, name: 'Rose Agony Lens (Left)' },
+  { aura_key: 'agonyLens', id: 105228, name: 'Azure Agony Lens (Right)' },
+  { aura_key: 'agonyLens', id: 105266, name: 'Amber Agony Lens (Right)' },
+  { aura_key: 'agonyLens', id: 105270, name: 'Aureate Agony Lens (Left)' },
+  { aura_key: 'agonyLens', id: 105294, name: 'Viridian Agony Lens (Right)' },
+  { aura_key: 'agonyLens', id: 105296, name: 'Rose Agony Lens (Right)' },
+  { aura_key: 'agonyLens', id: 105314, name: 'Viridian Agony Lens (Left)' },
+  { aura_key: 'agonyLens', id: 105326, name: 'Azure Agony Lens (Left)' },
+
+  { aura_key: 'etherealSeaLifeInfusion', id: 105450, name: 'Ethereal Sea-Life Infusion' },
+  { aura_key: 'etherealSeaLifeInfusion', id: 105682, name: 'Ethereal Sea-Life Infusion' },
+  { aura_key: 'etherealSeaLifeInfusion', id: 105993, name: 'Ethereal Sea-Life Infusion' },
+  { aura_key: 'etherealSeaLifeInfusion', id: 106337, name: 'Ethereal Sea-Life Infusion' },
+  { aura_key: 'etherealSeaLifeInfusion', id: 106527, name: 'Ethereal Sea-Life Infusion' },
+  { aura_key: 'etherealSeaLifeInfusion', id: 106597, name: 'Ethereal Sea-Life Infusion' },
+  { aura_key: 'etherealSeaLifeInfusion', id: 106727, name: 'Ethereal Sea-Life Infusion' },
   // -- GENERATE-END --
 ]
 
