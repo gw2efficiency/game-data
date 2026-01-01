@@ -415,6 +415,7 @@ const GAME_DATA_ITEMS_CATEGORIES_STAT_INFUSIONS: Array<GameDataItemsCategoriesSt
   { id: 106278, name: 'Chromatic Bubbles' },
   { id: 106597, name: 'Ethereal Sea-Life Infusion' },
   { id: 106727, name: 'Ethereal Sea-Life Infusion' },
+  { id: 105769, name: 'Ethereal Sea-Life Infusion' },
   // -- GENERATE-END --
 ]
 
