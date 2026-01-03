@@ -433,6 +433,7 @@ const GAME_DATA_ITEMS_CATEGORIES_COSMETIC_AURAS: Array<GameDataItemsCategoriesCo
 
   { aura_key: 'etherealSeaLifeInfusion', id: 105450, name: 'Ethereal Sea-Life Infusion' },
   { aura_key: 'etherealSeaLifeInfusion', id: 105682, name: 'Ethereal Sea-Life Infusion' },
+  { aura_key: 'etherealSeaLifeInfusion', id: 105769, name: 'Ethereal Sea-Life Infusion' },
   { aura_key: 'etherealSeaLifeInfusion', id: 105993, name: 'Ethereal Sea-Life Infusion' },
   { aura_key: 'etherealSeaLifeInfusion', id: 106337, name: 'Ethereal Sea-Life Infusion' },
   { aura_key: 'etherealSeaLifeInfusion', id: 106527, name: 'Ethereal Sea-Life Infusion' },
