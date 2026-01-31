@@ -491,6 +491,8 @@ const GAME_DATA_MOUNT_SKINS: Array<GameDataMountSkin> = [
   { id: 799, name: 'Sun-Kissed Wavehawk Skimmer', unlock_items: [106141] },
   { id: 800, name: 'Castoran Wavehawk Skimmer', unlock_items: [105813] },
   { id: 802, name: 'Darkmist Journeykin Warclaw', unlock_items: [106141] },
+  { id: 805, name: 'Inquest Skimmer', unlock_items: [106895] },
+  { id: 806, name: 'Inquest Raptor', unlock_items: [106896] },
   // -- GENERATE-END --
 ]
 
