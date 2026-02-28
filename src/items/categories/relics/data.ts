@@ -45,7 +45,7 @@ const GAME_DATA_ITEMS_CATEGORIES_RELICS: Array<GameDataItemsCategoriesRelic> = [
   { name: 'Relic of the Adventurer', exoticId: 100561, legendaryId: 101511 },
   { name: 'Relic of the Nightmare', exoticId: 100579, legendaryId: 101453 },
   { name: 'Relic of the Cavalier', exoticId: 100542, legendaryId: 101534 },
-  { name: 'Relic of the Wizard\'s Tower', exoticId: 100557, legendaryId: 101586 },
+  { name: "Relic of the Wizard's Tower", exoticId: 100557, legendaryId: 101586 },
   { name: 'Relic of Evasion', exoticId: 100614, legendaryId: 101441 },
   { name: 'Relic of Leadership', exoticId: 100625, legendaryId: 101461 },
   { name: 'Relic of the Water', exoticId: 100659, legendaryId: 101474 },
@@ -122,6 +122,12 @@ const GAME_DATA_ITEMS_CATEGORIES_RELICS: Array<GameDataItemsCategoriesRelic> = [
   { name: 'Relic of the Pirate Queen', exoticId: 106221, legendaryId: 106637 },
   { name: 'Relic of the Scoundrel', exoticId: 106355, legendaryId: 106650 },
   { name: 'Relic of the Biomancer', exoticId: 106364, legendaryId: 106098 },
+  { name: 'Relic of Shackles', exoticId: 106916, legendaryId: 107120 },
+  { name: 'Relic of the Nautical Beast', exoticId: 106920, legendaryId: 106958 },
+  { name: 'Relic of Fog', exoticId: 107030, legendaryId: 107009 },
+  { name: 'Relic of the Coral Heart', exoticId: 107061, legendaryId: 107174 },
+  { name: 'Relic of the Forest Dweller', exoticId: 107124, legendaryId: 107168 },
+  { name: 'Relic of the Alliance', exoticId: 107192, legendaryId: 106921 },
   // -- GENERATE-END --
 ]
 
