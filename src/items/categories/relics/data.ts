@@ -45,7 +45,7 @@ const GAME_DATA_ITEMS_CATEGORIES_RELICS: Array<GameDataItemsCategoriesRelic> = [
   { name: 'Relic of the Adventurer', exoticId: 100561, legendaryId: 101511 },
   { name: 'Relic of the Nightmare', exoticId: 100579, legendaryId: 101453 },
   { name: 'Relic of the Cavalier', exoticId: 100542, legendaryId: 101534 },
-  { name: "Relic of the Wizard's Tower", exoticId: 100557, legendaryId: 101586 },
+  { name: 'Relic of the Wizard\'s Tower', exoticId: 100557, legendaryId: 101586 },
   { name: 'Relic of Evasion', exoticId: 100614, legendaryId: 101441 },
   { name: 'Relic of Leadership', exoticId: 100625, legendaryId: 101461 },
   { name: 'Relic of the Water', exoticId: 100659, legendaryId: 101474 },

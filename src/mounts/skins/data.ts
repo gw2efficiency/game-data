@@ -493,7 +493,7 @@ const GAME_DATA_MOUNT_SKINS: Array<GameDataMountSkin> = [
   { id: 802, name: 'Darkmist Journeykin Warclaw', unlock_items: [106141] },
   { id: 805, name: 'Inquest Skimmer', unlock_items: [106895] },
   { id: 806, name: 'Inquest Raptor', unlock_items: [106896] },
-  { id: 815, name: 'Dhuumscale', unlock_items: [] },
+  { id: 815, name: 'Dhuumscale', unlock_items: [106970] },
   { id: 816, name: 'Mischievous Ferret Warclaw', unlock_items: [106997] },
   // -- GENERATE-END --
 ]
