@@ -416,6 +416,9 @@ const GAME_DATA_ITEMS_CATEGORIES_STAT_INFUSIONS: Array<GameDataItemsCategoriesSt
   { id: 106597, name: 'Ethereal Sea-Life Infusion' },
   { id: 106727, name: 'Ethereal Sea-Life Infusion' },
   { id: 105769, name: 'Ethereal Sea-Life Infusion' },
+  { id: 107167, name: 'Demonic Infusion' },
+  { id: 107083, name: 'Demonic Infusion' },
+  { id: 107045, name: 'Demonic Infusion' },
   // -- GENERATE-END --
 ]
 
