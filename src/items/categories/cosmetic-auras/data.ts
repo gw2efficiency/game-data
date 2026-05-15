@@ -22,9 +22,11 @@ const GAME_DATA_ITEMS_CATEGORIES_COSMETIC_AURAS: Array<GameDataItemsCategoriesCo
   { aura_key: 'frostLegionInfusion', id: 93858, name: 'Frost Legion Infusion' },
   { aura_key: 'frostLegionInfusion', id: 93906, name: 'Frost Legion Infusion' },
   { aura_key: 'frostLegionInfusion', id: 93920, name: 'Frost Legion Infusion' },
+  { aura_key: 'frostLegionInfusion', id: 105095, name: 'Scavenged Frost Legion Infusion' },
 
   { aura_key: 'ottersBlessingEnrichment', id: 93798, name: 'Otter\'s Blessing Enrichment' },
 
+  { aura_key: 'celebratoryBirthdayEnrichment', id: 93937, name: 'Dedicated Anniversary Achievement Box' },
   { aura_key: 'celebratoryBirthdayEnrichment', id: 93953, name: 'Celebratory Birthday Enrichment' },
 
   { aura_key: 'jormagEyeInfusions', id: 94929, name: 'Jormag Left Eye Infusion' },
@@ -62,6 +64,7 @@ const GAME_DATA_ITEMS_CATEGORIES_COSMETIC_AURAS: Array<GameDataItemsCategoriesCo
   { aura_key: 'primordusEyeInfusions', id: 94978, name: 'Primordus Left Eye Infusion' },
 
   { aura_key: 'wurmsBlessingEnrichment', id: 101126, name: 'Wurm\'s Karmic Blessing Enrichment' },
+  { aura_key: 'wurmsBlessingEnrichment', id: 101176, name: 'Wurm\'s Enrichment Choice Chest' },
   { aura_key: 'wurmsBlessingEnrichment', id: 101187, name: 'Wurm\'s WXP Blessing Enrichment' },
   { aura_key: 'wurmsBlessingEnrichment', id: 101193, name: 'Wurm\'s WvW Reward Track Blessing Enrichment' },
   { aura_key: 'wurmsBlessingEnrichment', id: 101250, name: 'Wurm\'s Experienced Blessing Enrichment' },
@@ -140,6 +143,7 @@ const GAME_DATA_ITEMS_CATEGORIES_COSMETIC_AURAS: Array<GameDataItemsCategoriesCo
   { aura_key: 'deldrimorStoneskinInfusions', id: 94609, name: 'Deldrimor Stoneskin Infusion' },
 
   { aura_key: 'echoOfTheDragonvoid', id: 97993, name: 'Echo of the Dragonvoid' },
+  { aura_key: 'echoOfTheDragonvoid', id: 98002, name: 'Glob of Dragonvoid Aether' },
   { aura_key: 'echoOfTheDragonvoid', id: 98004, name: 'Echo of the Dragonvoid' },
   { aura_key: 'echoOfTheDragonvoid', id: 98020, name: 'Echo of the Dragonvoid' },
   { aura_key: 'echoOfTheDragonvoid', id: 98022, name: 'Echo of the Dragonvoid' },
@@ -153,6 +157,7 @@ const GAME_DATA_ITEMS_CATEGORIES_COSMETIC_AURAS: Array<GameDataItemsCategoriesCo
   { aura_key: 'bloodstoneInfusion', id: 104349, name: 'Bloodstone Infusion' },
   { aura_key: 'bloodstoneInfusion', id: 104357, name: 'Bloodstone Infusion' },
   { aura_key: 'bloodstoneInfusion', id: 104386, name: 'Bloodstone Infusion' },
+  { aura_key: 'bloodstoneInfusion', id: 104448, name: 'Chunk of Pulsing Bloodstone' },
   { aura_key: 'bloodstoneInfusion', id: 104456, name: 'Bloodstone Infusion' },
   { aura_key: 'bloodstoneInfusion', id: 104472, name: 'Bloodstone Infusion' },
   { aura_key: 'bloodstoneInfusion', id: 104481, name: 'Bloodstone Infusion' },
@@ -163,8 +168,15 @@ const GAME_DATA_ITEMS_CATEGORIES_COSMETIC_AURAS: Array<GameDataItemsCategoriesCo
   { aura_key: 'chromaticBubbles', id: 106128, name: 'Chromatic Bubbles' },
   { aura_key: 'chromaticBubbles', id: 106173, name: 'Chromatic Bubbles' },
   { aura_key: 'chromaticBubbles', id: 106278, name: 'Chromatic Bubbles' },
+  { aura_key: 'chromaticBubbles', id: 106285, name: 'Chromatic Bubble Wand' },
   { aura_key: 'chromaticBubbles', id: 106399, name: 'Chromatic Bubbles' },
   { aura_key: 'chromaticBubbles', id: 106471, name: 'Chromatic Bubbles' },
+
+  { aura_key: 'seerTranscendence', id: 109239, name: 'Mote of Seer Transcendence' },
+  { aura_key: 'seerTranscendence', id: 109341, name: 'Seer Transcendence' },
+  { aura_key: 'seerTranscendence', id: 109440, name: 'Seer Transcendence' },
+  { aura_key: 'seerTranscendence', id: 109537, name: 'Seer Transcendence' },
+  { aura_key: 'seerTranscendence', id: 109748, name: 'Seer Transcendence' },
 
   { aura_key: 'celestialInfusionBlue', id: 81761, name: 'Celestial Infusion (Blue)' },
   { aura_key: 'celestialInfusionBlue', id: 81779, name: 'Celestial Infusion (Blue)' },
@@ -176,6 +188,7 @@ const GAME_DATA_ITEMS_CATEGORIES_COSMETIC_AURAS: Array<GameDataItemsCategoriesCo
   { aura_key: 'celestialInfusionBlue', id: 86347, name: 'Celestial Infusion (Blue)' },
 
   { aura_key: 'celestialInfusionRed', id: 81783, name: 'Celestial Infusion (Red)' },
+  { aura_key: 'celestialInfusionRed', id: 81790, name: 'Celestial Infusion Chest' },
   { aura_key: 'celestialInfusionRed', id: 81792, name: 'Celestial Infusion (Red)' },
   { aura_key: 'celestialInfusionRed', id: 81814, name: 'Celestial Infusion (Red)' },
   { aura_key: 'celestialInfusionRed', id: 81927, name: 'Celestial Infusion (Red)' },
@@ -185,6 +198,7 @@ const GAME_DATA_ITEMS_CATEGORIES_COSMETIC_AURAS: Array<GameDataItemsCategoriesCo
   { aura_key: 'celestialInfusionRed', id: 85833, name: 'Celestial Infusion (Red)' },
 
   { aura_key: 'abyssalInfusion', id: 94010, name: 'Abyssal Infusion' },
+  { aura_key: 'abyssalInfusion', id: 94017, name: 'Abyssal Infusion Chest' },
   { aura_key: 'abyssalInfusion', id: 94024, name: 'Abyssal Infusion' },
   { aura_key: 'abyssalInfusion', id: 94028, name: 'Abyssal Infusion' },
   { aura_key: 'abyssalInfusion', id: 94039, name: 'Abyssal Infusion' },
@@ -193,12 +207,14 @@ const GAME_DATA_ITEMS_CATEGORIES_COSMETIC_AURAS: Array<GameDataItemsCategoriesCo
   { aura_key: 'abyssalInfusion', id: 94090, name: 'Abyssal Infusion' },
   { aura_key: 'abyssalInfusion', id: 94091, name: 'Abyssal Infusion' },
 
+  { aura_key: 'moteOfDarkness', id: 99864, name: 'Scavenged Lingering Darkness' },
   { aura_key: 'moteOfDarkness', id: 99869, name: 'Mote of Darkness' },
   { aura_key: 'moteOfDarkness', id: 99878, name: 'Mote of Darkness' },
   { aura_key: 'moteOfDarkness', id: 99880, name: 'Mote of Darkness' },
   { aura_key: 'moteOfDarkness', id: 99881, name: 'Mote of Darkness' },
   { aura_key: 'moteOfDarkness', id: 99882, name: 'Mote of Darkness' },
   { aura_key: 'moteOfDarkness', id: 99887, name: 'Mote of Darkness' },
+  { aura_key: 'moteOfDarkness', id: 99890, name: 'Lingering Darkness' },
   { aura_key: 'moteOfDarkness', id: 99894, name: 'Mote of Darkness' },
   { aura_key: 'moteOfDarkness', id: 99898, name: 'Mote of Darkness' },
 
@@ -309,6 +325,11 @@ const GAME_DATA_ITEMS_CATEGORIES_COSMETIC_AURAS: Array<GameDataItemsCategoriesCo
   { aura_key: 'peerlessInfusions', id: 91221, name: 'Peerless Infusion' },
   { aura_key: 'peerlessInfusions', id: 91236, name: 'Peerless Infusion' },
 
+  { aura_key: 'demonicInfusions', id: 107045, name: 'Demonic Infusion' },
+  { aura_key: 'demonicInfusions', id: 107083, name: 'Demonic Infusion' },
+  { aura_key: 'demonicInfusions', id: 107111, name: 'Phylactery of Demonic Energy' },
+  { aura_key: 'demonicInfusions', id: 107167, name: 'Demonic Infusion' },
+
   { aura_key: 'baubleInfusions', id: 78012, name: 'Moto\'s Unstable Bauble Infusion: Blue' },
   { aura_key: 'baubleInfusions', id: 78016, name: 'Moto\'s Unstable Bauble Infusion: Red' },
   { aura_key: 'baubleInfusions', id: 78028, name: 'Moto\'s Unstable Bauble Infusion: Red' },
@@ -355,6 +376,7 @@ const GAME_DATA_ITEMS_CATEGORIES_COSMETIC_AURAS: Array<GameDataItemsCategoriesCo
 
   { aura_key: 'imperialEverbloom', id: 98083, name: 'Imperial Everbloom' },
   { aura_key: 'imperialEverbloom', id: 98088, name: 'Imperial Everbloom' },
+  { aura_key: 'imperialEverbloom', id: 98092, name: 'Imperial Everbloom Sprout' },
   { aura_key: 'imperialEverbloom', id: 98105, name: 'Imperial Everbloom' },
   { aura_key: 'imperialEverbloom', id: 98119, name: 'Imperial Everbloom' },
   { aura_key: 'imperialEverbloom', id: 98131, name: 'Imperial Everbloom' },
@@ -370,8 +392,10 @@ const GAME_DATA_ITEMS_CATEGORIES_COSMETIC_AURAS: Array<GameDataItemsCategoriesCo
   { aura_key: 'clockworkInfusion', id: 99240, name: 'Clockwork Infusion' },
   { aura_key: 'clockworkInfusion', id: 99244, name: 'Clockwork Infusion' },
   { aura_key: 'clockworkInfusion', id: 99248, name: 'Clockwork Infusion' },
+  { aura_key: 'clockworkInfusion', id: 99250, name: 'Ever-Spinning Clockwork' },
 
   { aura_key: 'jotunInfusion', id: 101124, name: 'Jotun Infusion' },
+  { aura_key: 'jotunInfusion', id: 101144, name: 'Vial of Cosmic Energies' },
   { aura_key: 'jotunInfusion', id: 101146, name: 'Jotun Infusion' },
   { aura_key: 'jotunInfusion', id: 101169, name: 'Jotun Infusion' },
   { aura_key: 'jotunInfusion', id: 101171, name: 'Jotun Infusion' },
@@ -382,6 +406,7 @@ const GAME_DATA_ITEMS_CATEGORIES_COSMETIC_AURAS: Array<GameDataItemsCategoriesCo
 
   { aura_key: 'possessionInfusion', id: 100008, name: 'Possession Infusion' },
   { aura_key: 'possessionInfusion', id: 100065, name: 'Possession Infusion' },
+  { aura_key: 'possessionInfusion', id: 100244, name: 'Jar of Dangerous Spirits' },
   { aura_key: 'possessionInfusion', id: 100302, name: 'Possession Infusion' },
   { aura_key: 'possessionInfusion', id: 100407, name: 'Possession Infusion' },
   { aura_key: 'possessionInfusion', id: 100513, name: 'Possession Infusion' },
@@ -397,6 +422,7 @@ const GAME_DATA_ITEMS_CATEGORIES_COSMETIC_AURAS: Array<GameDataItemsCategoriesCo
   { aura_key: 'silentSymphony', id: 99940, name: 'Silent Symphony' },
   { aura_key: 'silentSymphony', id: 99946, name: 'Silent Symphony' },
   { aura_key: 'silentSymphony', id: 99948, name: 'Silent Symphony' },
+  { aura_key: 'silentSymphony', id: 99956, name: 'Enchanted Music Box' },
 
   { aura_key: 'arcaneFlowInfusion', id: 101199, name: 'Arcane Flow Infusion' },
   { aura_key: 'arcaneFlowInfusion', id: 101223, name: 'Arcane Flow Infusion' },
@@ -413,6 +439,7 @@ const GAME_DATA_ITEMS_CATEGORIES_COSMETIC_AURAS: Array<GameDataItemsCategoriesCo
   { aura_key: 'mistwalkerInfusion', id: 99809, name: 'Mistwalker Infusion' },
   { aura_key: 'mistwalkerInfusion', id: 99824, name: 'Mistwalker Infusion' },
   { aura_key: 'mistwalkerInfusion', id: 99839, name: 'Mistwalker Infusion' },
+  { aura_key: 'mistwalkerInfusion', id: 99844, name: 'Ball of Charged Mists Essence' },
   { aura_key: 'mistwalkerInfusion', id: 99848, name: 'Mistwalker Infusion' },
   { aura_key: 'mistwalkerInfusion', id: 99850, name: 'Mistwalker Infusion' },
 
@@ -439,6 +466,7 @@ const GAME_DATA_ITEMS_CATEGORIES_COSMETIC_AURAS: Array<GameDataItemsCategoriesCo
   { aura_key: 'etherealSeaLifeInfusion', id: 106527, name: 'Ethereal Sea-Life Infusion' },
   { aura_key: 'etherealSeaLifeInfusion', id: 106597, name: 'Ethereal Sea-Life Infusion' },
   { aura_key: 'etherealSeaLifeInfusion', id: 106727, name: 'Ethereal Sea-Life Infusion' },
+  { aura_key: 'etherealSeaLifeInfusion', id: 106760, name: 'Ethereal Aquarium' },
   // -- GENERATE-END --
 ]
 
