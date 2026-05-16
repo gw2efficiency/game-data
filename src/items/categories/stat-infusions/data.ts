@@ -419,6 +419,10 @@ const GAME_DATA_ITEMS_CATEGORIES_STAT_INFUSIONS: Array<GameDataItemsCategoriesSt
   { id: 107167, name: 'Demonic Infusion' },
   { id: 107083, name: 'Demonic Infusion' },
   { id: 107045, name: 'Demonic Infusion' },
+  { id: 109341, name: 'Seer Transcendence' },
+  { id: 109537, name: 'Seer Transcendence' },
+  { id: 109748, name: 'Seer Transcendence' },
+  { id: 109440, name: 'Seer Transcendence' },
   // -- GENERATE-END --
 ]
 

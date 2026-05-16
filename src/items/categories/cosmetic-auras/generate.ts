@@ -12,12 +12,21 @@ interface AuraItemName {
 export const AURA_ITEM_NAMES: Array<AuraItemName> = [
   // Achievement
   { auraKey: 'kodasWarmthEnrichment', match: /^Koda's Warmth Enrichment$/ },
-  { auraKey: 'frostLegionInfusion', match: /^Frost Legion Infusion$/ },
+  {
+    auraKey: 'frostLegionInfusion',
+    match: /^(Frost Legion Infusion|Scavenged Frost Legion Infusion)$/,
+  },
   { auraKey: 'ottersBlessingEnrichment', match: /^Otter's Blessing Enrichment$/ },
-  { auraKey: 'celebratoryBirthdayEnrichment', match: /^Celebratory Birthday Enrichment$/ },
+  {
+    auraKey: 'celebratoryBirthdayEnrichment',
+    match: /^(Celebratory Birthday Enrichment|Dedicated Anniversary Achievement Box)$/,
+  },
   { auraKey: 'jormagEyeInfusions', match: /^Jormag (Left|Right) Eye Infusion$/ },
   { auraKey: 'primordusEyeInfusions', match: /^Primordus (Left|Right) Eye Infusion$/ },
-  { auraKey: 'wurmsBlessingEnrichment', match: /^Wurm's .* Blessing Enrichment$/ },
+  {
+    auraKey: 'wurmsBlessingEnrichment',
+    match: /^(Wurm's .* Blessing Enrichment|Wurm's Enrichment Choice Chest)$/,
+  },
   { auraKey: 'forestWispInfusion', match: /^Forest Wisp Infusion$/ },
   { auraKey: 'heatCoreInfusion', match: /^Heat Core Infusion$/ },
 
@@ -29,15 +38,22 @@ export const AURA_ITEM_NAMES: Array<AuraItemName> = [
   { auraKey: 'crystalInfusions', match: /^Crystal Infusion of .*$/ },
   { auraKey: 'heartOfTheKhanUr', match: /^Heart of the Khan-Ur$/ },
   { auraKey: 'deldrimorStoneskinInfusions', match: /^Deldrimor Stoneskin Infusion$/ },
-  { auraKey: 'echoOfTheDragonvoid', match: /^Echo of the Dragonvoid$/ },
-  { auraKey: 'bloodstoneInfusion', match: /^Bloodstone Infusion$/ },
-  { auraKey: 'chromaticBubbles', match: /^Chromatic Bubbles$/ },
+  { auraKey: 'echoOfTheDragonvoid', match: /^(Echo of the Dragonvoid|Glob of Dragonvoid Aether)$/ },
+  { auraKey: 'bloodstoneInfusion', match: /^(Bloodstone Infusion|Chunk of Pulsing Bloodstone)$/ },
+  { auraKey: 'chromaticBubbles', match: /^(Chromatic Bubbles|Chromatic Bubble Wand)$/ },
+  { auraKey: 'seerTranscendence', match: /^(Seer Transcendence|Mote of Seer Transcendence)$/ },
 
   // Fractals of the Mists
   { auraKey: 'celestialInfusionBlue', match: /^Celestial Infusion \(Blue\)$/ },
-  { auraKey: 'celestialInfusionRed', match: /^Celestial Infusion \(Red\)$/ },
-  { auraKey: 'abyssalInfusion', match: /^Abyssal Infusion$/ },
-  { auraKey: 'moteOfDarkness', match: /^Mote of Darkness$/ },
+  {
+    auraKey: 'celestialInfusionRed',
+    match: /^(Celestial Infusion \(Red\)|Celestial Infusion Chest)$/,
+  },
+  { auraKey: 'abyssalInfusion', match: /^(Abyssal Infusion|Abyssal Infusion Chest)$/ },
+  {
+    auraKey: 'moteOfDarkness',
+    match: /^(Mote of Darkness|Scavenged Lingering Darkness|Lingering Darkness)$/,
+  },
 
   // Halloween
   { auraKey: 'phospholuminescentInfusions', match: /^Phospholuminescent Infusion$/ },
@@ -51,6 +67,7 @@ export const AURA_ITEM_NAMES: Array<AuraItemName> = [
   // Raids
   { auraKey: 'ghostlyInfusions', match: /^Ghostly Infusion$/ },
   { auraKey: 'peerlessInfusions', match: /^Peerless Infusion$/ },
+  { auraKey: 'demonicInfusions', match: /^(Demonic Infusion|Phylactery of Demonic Energy)$/ },
 
   // Super Adventure Box
   { auraKey: 'baubleInfusions', match: /^Moto's Unstable Bauble Infusion: .*$/ },
@@ -61,25 +78,25 @@ export const AURA_ITEM_NAMES: Array<AuraItemName> = [
   { auraKey: 'toyShellInfusions', match: /^Toy-Shell Infusion$/ },
 
   // Strike Missions
-  { auraKey: 'imperialEverbloom', match: /^Imperial Everbloom$/ },
-  { auraKey: 'clockworkInfusion', match: /^Clockwork Infusion$/ },
-  { auraKey: 'jotunInfusion', match: /^Jotun Infusion$/ },
-  { auraKey: 'possessionInfusion', match: /^Possession Infusion$/ },
+  { auraKey: 'imperialEverbloom', match: /^(Imperial Everbloom|Imperial Everbloom Sprout)$/ },
+  { auraKey: 'clockworkInfusion', match: /^(Clockwork Infusion|Ever-Spinning Clockwork)$/ },
+  { auraKey: 'jotunInfusion', match: /^(Jotun Infusion|Vial of Cosmic Energies)$/ },
+  { auraKey: 'possessionInfusion', match: /^(Possession Infusion|Jar of Dangerous Spirits)$/ },
 
   // Festivals
-  { auraKey: 'silentSymphony', match: /^Silent Symphony$/ },
+  { auraKey: 'silentSymphony', match: /^(Silent Symphony|Enchanted Music Box)$/ },
 
   // Wizard's Vault
   { auraKey: 'arcaneFlowInfusion', match: /^Arcane Flow Infusion$/ },
 
   // World versus World
-  { auraKey: 'mistwalkerInfusion', match: /^Mistwalker Infusion$/ },
+  { auraKey: 'mistwalkerInfusion', match: /^(Mistwalker Infusion|Ball of Charged Mists Essence)$/ },
 
   // Incursive Investigation
   { auraKey: 'agonyLens', match: /(Agony Lens \(Left\)|Agony Lens \(Right\))/ },
 
   // Fishing
-  { auraKey: 'etherealSeaLifeInfusion', match: /^Ethereal Sea-Life Infusion$/ },
+  { auraKey: 'etherealSeaLifeInfusion', match: /^(Ethereal Sea-Life Infusion|Ethereal Aquarium)$/ },
 ]
 
 interface UApiItem {
