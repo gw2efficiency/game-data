@@ -423,6 +423,7 @@ const GAME_DATA_ITEMS_CATEGORIES_STAT_INFUSIONS: Array<GameDataItemsCategoriesSt
   { id: 109537, name: 'Seer Transcendence' },
   { id: 109748, name: 'Seer Transcendence' },
   { id: 109440, name: 'Seer Transcendence' },
+  { id: 109243, name: 'Seer Transcendence' },
   // -- GENERATE-END --
 ]
 
