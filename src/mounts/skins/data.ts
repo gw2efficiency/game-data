@@ -495,6 +495,8 @@ const GAME_DATA_MOUNT_SKINS: Array<GameDataMountSkin> = [
   { id: 806, name: 'Inquest Raptor', unlock_items: [106896] },
   { id: 815, name: 'Dhuumscale', unlock_items: [106970] },
   { id: 816, name: 'Mischievous Ferret Warclaw', unlock_items: [106997] },
+  { id: 830, name: 'Orchid Mantid Raptor', unlock_items: [109536] },
+  { id: 847, name: 'Swiftwing Raptor', unlock_items: [109246] },
   // -- GENERATE-END --
 ]
 

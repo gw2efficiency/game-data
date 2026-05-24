@@ -173,6 +173,7 @@ const GAME_DATA_ITEMS_CATEGORIES_COSMETIC_AURAS: Array<GameDataItemsCategoriesCo
   { aura_key: 'chromaticBubbles', id: 106471, name: 'Chromatic Bubbles' },
 
   { aura_key: 'seerTranscendence', id: 109239, name: 'Mote of Seer Transcendence' },
+  { aura_key: 'seerTranscendence', id: 109243, name: 'Seer Transcendence' },
   { aura_key: 'seerTranscendence', id: 109341, name: 'Seer Transcendence' },
   { aura_key: 'seerTranscendence', id: 109440, name: 'Seer Transcendence' },
   { aura_key: 'seerTranscendence', id: 109537, name: 'Seer Transcendence' },

@@ -128,6 +128,12 @@ const GAME_DATA_ITEMS_CATEGORIES_RELICS: Array<GameDataItemsCategoriesRelic> = [
   { name: 'Relic of the Coral Heart', exoticId: 107061, legendaryId: 107174 },
   { name: 'Relic of the Forest Dweller', exoticId: 107124, legendaryId: 107168 },
   { name: 'Relic of the Alliance', exoticId: 107192, legendaryId: 106921 },
+  { name: 'Relic of Galdra', exoticId: 109264, legendaryId: 109094 },
+  { name: 'Relic of the Sacred Grounds', exoticId: 109267, legendaryId: 109159 },
+  { name: 'Relic of the Doyen', exoticId: 109522, legendaryId: 109053 },
+  { name: 'Relic of Watch', exoticId: 109709, legendaryId: 109139 },
+  { name: 'Relic of the Cruel Overseer', exoticId: 109664, legendaryId: 109034 },
+  { name: 'Relic of the Director', exoticId: 109351, legendaryId: 108992 },
   // -- GENERATE-END --
 ]
 
