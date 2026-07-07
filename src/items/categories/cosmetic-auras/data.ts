@@ -176,6 +176,8 @@ const GAME_DATA_ITEMS_CATEGORIES_COSMETIC_AURAS: Array<GameDataItemsCategoriesCo
   { aura_key: 'seerTranscendence', id: 109243, name: 'Seer Transcendence' },
   { aura_key: 'seerTranscendence', id: 109341, name: 'Seer Transcendence' },
   { aura_key: 'seerTranscendence', id: 109440, name: 'Seer Transcendence' },
+  { aura_key: 'seerTranscendence', id: 109518, name: 'Seer Transcendence' },
+  { aura_key: 'seerTranscendence', id: 109529, name: 'Seer Transcendence' },
   { aura_key: 'seerTranscendence', id: 109537, name: 'Seer Transcendence' },
   { aura_key: 'seerTranscendence', id: 109748, name: 'Seer Transcendence' },
 
@@ -327,6 +329,7 @@ const GAME_DATA_ITEMS_CATEGORIES_COSMETIC_AURAS: Array<GameDataItemsCategoriesCo
   { aura_key: 'peerlessInfusions', id: 91236, name: 'Peerless Infusion' },
 
   { aura_key: 'demonicInfusions', id: 107045, name: 'Demonic Infusion' },
+  { aura_key: 'demonicInfusions', id: 107079, name: 'Demonic Infusion' },
   { aura_key: 'demonicInfusions', id: 107083, name: 'Demonic Infusion' },
   { aura_key: 'demonicInfusions', id: 107111, name: 'Phylactery of Demonic Energy' },
   { aura_key: 'demonicInfusions', id: 107167, name: 'Demonic Infusion' },
