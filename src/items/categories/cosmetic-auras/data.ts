@@ -179,6 +179,7 @@ const GAME_DATA_ITEMS_CATEGORIES_COSMETIC_AURAS: Array<GameDataItemsCategoriesCo
   { aura_key: 'seerTranscendence', id: 109518, name: 'Seer Transcendence' },
   { aura_key: 'seerTranscendence', id: 109529, name: 'Seer Transcendence' },
   { aura_key: 'seerTranscendence', id: 109537, name: 'Seer Transcendence' },
+  { aura_key: 'seerTranscendence', id: 109573, name: 'Seer Transcendence' },
   { aura_key: 'seerTranscendence', id: 109748, name: 'Seer Transcendence' },
 
   { aura_key: 'celestialInfusionBlue', id: 81761, name: 'Celestial Infusion (Blue)' },
@@ -328,6 +329,7 @@ const GAME_DATA_ITEMS_CATEGORIES_COSMETIC_AURAS: Array<GameDataItemsCategoriesCo
   { aura_key: 'peerlessInfusions', id: 91221, name: 'Peerless Infusion' },
   { aura_key: 'peerlessInfusions', id: 91236, name: 'Peerless Infusion' },
 
+  { aura_key: 'demonicInfusions', id: 106901, name: 'Demonic Infusion' },
   { aura_key: 'demonicInfusions', id: 107045, name: 'Demonic Infusion' },
   { aura_key: 'demonicInfusions', id: 107079, name: 'Demonic Infusion' },
   { aura_key: 'demonicInfusions', id: 107083, name: 'Demonic Infusion' },
