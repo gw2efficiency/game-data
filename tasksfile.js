@@ -1,19 +1,57 @@
 const { sh: _sh, cli } = require('tasksfile')
 const glob = require('glob')
 const fs = require('fs')
+const path = require('path')
 
 function sh (command, options = {}) {
   return _sh(command, { nopipe: true, ...options })
 }
 
+function getCacheFiles (generator) {
+  const content = fs.readFileSync(generator, 'utf-8')
+
+  return [...content.matchAll(/['"]([^'"]+\.json)['"]/g)]
+    .map((match) => match[1])
+    .filter((file) => ['items.json', 'achievements.json', 'recipes.json'].includes(file))
+}
+
+
+function resolveGenerator (generators, target) {
+  const normalizedTarget = target.replace(/\\/g, '/')
+  const match = generators.find((generator) => {
+    const normalizedGenerator = generator.replace(/\\/g, '/')
+
+    return (
+      normalizedGenerator === `src/${normalizedTarget}/generate.ts` ||
+      normalizedGenerator.endsWith(`/${normalizedTarget}/generate.ts`)
+    )
+  })
+
+  if (!match) {
+    throw new Error(`No generator matched "${target}"`)
+  }
+
+  return match
+}
+
 function generate () {
-  sh('./refresh-cache.sh')
+  const target = process.argv[3]
 
   const generators = glob.sync(`src/**/generate.ts`).filter((path) => !path.includes('_helpers'))
+  const selectedGenerators = target ? [resolveGenerator(generators, target)] : generators
 
-  for (const generator of generators) {
-    sh(`ts-node ${generator}`)
+  if (!target) {
+    sh('./refresh-cache.sh')
+  } else {
+    const cacheFiles = [...new Set(selectedGenerators.flatMap(getCacheFiles))]
+    const missingCache = cacheFiles.some((file) => !fs.existsSync(path.join(__dirname, '.cache', file)))
+
+    if (missingCache) {
+      sh('./refresh-cache.sh')
+    }
   }
+
+  selectedGenerators.map((generator) => sh(`ts-node ${generator}`))
 }
 
 function build () {

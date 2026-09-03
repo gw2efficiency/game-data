@@ -498,6 +498,7 @@ const GAME_DATA_MOUNT_SKINS: Array<GameDataMountSkin> = [
   { id: 830, name: 'Orchid Mantid Raptor', unlock_items: [109536] },
   { id: 847, name: 'Swiftwing Raptor', unlock_items: [109246] },
   { id: 853, name: 'Soul Eater Siege Turtle', unlock_items: [109786] },
+  { id: 854, name: 'Ornate Gourd Skimmer', unlock_items: [109862] },
   // -- GENERATE-END --
 ]
 
